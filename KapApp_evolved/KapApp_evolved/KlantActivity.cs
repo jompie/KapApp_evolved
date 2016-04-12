@@ -33,10 +33,10 @@ namespace KapApp_evolved
 
 			SetContentView (Resource.Layout.KlantScherm);
 
-
+			ingelogdAls =  bi.GetIngelogd();
 			//Geef naam van klant weer in welkomsbericht
 			txtWelkom = FindViewById<TextView>(Resource.Id.txt_klantWelkom);
-			txtWelkom.Text = ingelogdAls;
+			txtWelkom.Text = "Welkom "+ingelogdAls+",";
 
 			btn_basisinstellinen = FindViewById<Button> (Resource.Id.btn_klantBasisinstellingen);
 			btn_basisinstellinen.Click += delegate {

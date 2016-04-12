@@ -2,20 +2,196 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:text="Op dit scherm wordt het advies weergegeven."
+    android:layout_height="match_parent"
+    android:weightSum="80"
+    android:padding="10dp"
+    android:gravity="fill"
+    android:textAlignment="center">
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout1"
+        android:weightSum="70"
+        android:layout_weight="10"
+        android:gravity="center_horizontal">
+        <TextView
+            android:text="Omschrijving"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="20"
+            android:gravity="center_vertical" />
+        <TextView
+            android:text="Text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_omschrijvingAdvies"
+            android:layout_weight="50"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout2"
+        android:weightSum="70"
+        android:layout_weight="10">
+        <TextView
+            android:text="Stylist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="20"
+            android:gravity="center_vertical" />
+        <TextView
+            android:text="Text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_stylistOmschrijving"
+            android:layout_weight="40"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout2"
+        android:weightSum="70"
+        android:layout_weight="10">
+        <TextView
+            android:text="Bovenlichaam"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="20"
+            android:gravity="center_vertical" />
+        <TextView
+            android:text="Text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_bovenlichaamOmschrijving"
+            android:layout_weight="40"
+            android:gravity="center_vertical" />
+        <Button
+            android:text="i"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_infoBoven"
+            android:layout_weight="10"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout2"
+        android:weightSum="70"
+        android:layout_weight="10">
+        <TextView
+            android:text="Benen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="20"
+            android:gravity="center_vertical" />
+        <TextView
+            android:text="Text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_benenOmschrijving"
+            android:layout_weight="40"
+            android:gravity="center_vertical" />
+        <Button
+            android:text="i"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_infoBenen"
+            android:layout_weight="10"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout2"
+        android:weightSum="70"
+        android:layout_weight="10">
+        <TextView
+            android:text="Schoenen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="20"
+            android:gravity="center_vertical" />
+        <TextView
+            android:text="Text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_schoenenOmschrijving"
+            android:layout_weight="40"
+            android:gravity="center_vertical" />
+        <Button
+            android:text="i"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_infoSchoenen"
+            android:layout_weight="10"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout2"
+        android:weightSum="70"
+        android:layout_weight="10">
+        <TextView
+            android:text="Accessoires"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="20"
+            android:gravity="center_vertical" />
+        <TextView
+            android:text="Text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_accessoiresOmschrijving"
+            android:layout_weight="40"
+            android:gravity="center_vertical" />
+        <Button
+            android:text="i"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_infoAccessoires"
+            android:layout_weight="10"
+            android:textStyle="italic" />
+    </LinearLayout>
     <Button
-        android:text="Krijg Kortingscode"
+        android:text="Krijg kortingscode"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_adviesGenereerQR" />
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_height="0dp"
+        android:id="@+id/btn_genereerQR"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/img_adviesQR" />
+        android:layout_height="0dp"
+        android:id="@+id/linearLayout2"
+        android:weightSum="20"
+        android:layout_weight="10">
+        <Button
+            android:text="Toevoegen aan favorieten"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:layout_weight="10" />
+        <Button
+            android:text="Niet leuk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:layout_weight="10" />
+    </LinearLayout>
 </LinearLayout>

@@ -68,12 +68,12 @@ namespace CC
 					List<Basisinstelling> basis = db.Query<Basisinstelling> ("SELECT * FROM BASISINSTELLING WHERE GEBRUIKERSNAAMKLANT = '" + gebruikersnaamKlant + "' ORDER BY IDBASISINSTELLING DESC LIMIT 1");
 					if (basis.Count > 0) {
 						Basisinstelling p = basis [0];
-						string geslacht = p.Geslacht;
+						string geslacht = p.Geslacht + p.Oogkleur + p.Haarkleur + p.Ondertoon + p.Kleurtype + p.Lichaamstype;
 						return geslacht;
 					}
 				}
 			}
-			return "";
+			return null;
 		}
 
 

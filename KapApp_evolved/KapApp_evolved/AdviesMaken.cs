@@ -145,6 +145,7 @@ namespace KapApp_evolved
 			btnBevestigen.Click += delegate {
 				ba.InsertAdvies(adviesOmschrijving.Text, benen, bovenlichaam, schoenen, accessoires, geslacht+oogkleur+haarkleur+ondertoon+kleurtype+lichaamstype, ingelogdAls);
 				Toast.MakeText(this, "Advies Succesvol aangemaakt", ToastLength.Short).Show();
+				StartActivity(typeof(StylistActivity));
 			};
 		}
 

@@ -43,6 +43,18 @@ namespace CC
 			databaseCreated = CheckIfCreated ();
 			if (databaseCreated) 
 			{
+				using (var db = new SQLiteConnection (GetDatabasePath ())) 
+				{
+					db.DeleteAll<Ingelogd> ();
+				}
+				CreateTable ();
+			} 
+			else 
+				if (!databaseCreated) 
+				{
+					CreateTable ();
+				}
+			{
 				Ingelogd ingelogd = new Ingelogd {GebruikersnaamIngelogd = gebruikersnaam};
 				using (var db = new SQLiteConnection (GetDatabasePath ())) {
 					db.DeleteAll<Ingelogd> ();
@@ -57,7 +69,7 @@ namespace CC
 			databaseCreated = CheckIfCreated ();
 			if (databaseCreated) {
 				using (var db = new SQLiteConnection (GetDatabasePath ())) {
-					List<Ingelogd> ingelogd = db.Query<Ingelogd> ("SELECT * FROM INGELOGD ");
+					List<Ingelogd> ingelogd = db.Query<Ingelogd> ("SELECT * FROM INGELOGD ORDER BY IDIngelogd DESC");
 					if (ingelogd.Count > 0) {
 						Ingelogd p = ingelogd [0];
 						string gebruikersnaam = p.GebruikersnaamIngelogd;

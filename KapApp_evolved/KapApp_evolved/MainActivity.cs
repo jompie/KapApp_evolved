@@ -43,7 +43,6 @@ namespace KapApp_evolved
 						string ww = bg.GetGebruikerWachtwoord(txtGebruikersnaam.Text);
 						if (txtWachtwoord.Text == ww)
 						{
-							//bi.SetIngelogdAls(txtGebruikersnaam.Text);
 							bi.InsertIngelogd(txtGebruikersnaam.Text);
 							string type = bg.GetGebruikersType(txtGebruikersnaam.Text);
 							if (type == "Klant"){
