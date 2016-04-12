@@ -43,7 +43,10 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="zxing.monoandroid">
-      <HintPath>..\packages\ZXing.Net.0.14.0.1\lib\MonoAndroid\zxing.monoandroid.dll</HintPath>
+      <HintPath>..\..\..\..\OneDrive\Studie\Jaar 2\PIT1\QRCodeReader\packages\ZXing.Net.Mobile.1.4.2.1\lib\MonoAndroid\zxing.monoandroid.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\..\..\..\OneDrive\Studie\Jaar 2\PIT1\QRCodeReader\packages\ZXing.Net.Mobile.1.4.2.1\lib\MonoAndroid\ZXing.Net.Mobile.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -11,16 +11,20 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+using CC;
+
 namespace KapApp_evolved
 {
 	[Activity (Label = "VerkoperToevoegen")]			
 	public class VerkoperToevoegen : Activity
 	{
+		BeheerGebruikers bg = new BeheerGebruikers ();
+
 		EditText txtNaam;
 		EditText txtGebruikersnaam;
 		EditText txtWachtwoord;
 		EditText txtHerhaalWachtwoord;
-		Button bevestigen;
+		Button btnBevestigen;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -28,7 +32,47 @@ namespace KapApp_evolved
 
 			SetContentView (Resource.Layout.VerkoperToevoegen);
 
+			txtNaam = FindViewById<EditText> (Resource.Id.txt_regNaamVerkoper);
+			txtGebruikersnaam = FindViewById<EditText> (Resource.Id.txt_regGebruikersnaamVerkoper);
+			txtWachtwoord = FindViewById<EditText> (Resource.Id.txt_regWachtwoordVerkoper);
+			txtHerhaalWachtwoord = FindViewById <EditText> (Resource.Id.txt_regHerhaalWachtwoordVerkoper);
+
+			btnBevestigen = FindViewById <Button> (Resource.Id.btn_regRegistreerVerkoper);
+			btnBevestigen.Click += delegate {
+				string type = "Verkoper";
+				bool volledigIngevuld = checkVolledigIngevuld();
+				if (volledigIngevuld){
+					bool gebruikerBestaatAl = bg.GebruikerBestaat(txtGebruikersnaam.Text);
+					if(!gebruikerBestaatAl){
+						if(txtWachtwoord.Text == txtHerhaalWachtwoord.Text){
+							bg.InsertGebruiker(txtNaam.Text, 
+								txtGebruikersnaam.Text, 
+								txtWachtwoord.Text, 
+								type);
+							Toast.MakeText (this.BaseContext, "Account aangemaakt", ToastLength.Short).Show ();
+							StartActivity(typeof(WinkeleigenaarActivity));
+						}
+						else
+							Toast.MakeText (this.BaseContext, "Wachtwoord komt niet overeen", ToastLength.Short).Show ();
+					}
+					else
+						Toast.MakeText (this.BaseContext, "Gebruikersnaam is reeds in gebruik", ToastLength.Short).Show ();
+				}
+				else 
+					if(!volledigIngevuld)
+						Toast.MakeText (this.BaseContext, "Formulier is niet volledig ingevuld", ToastLength.Short).Show ();
+			};
+		}
+		private bool checkVolledigIngevuld()
+		{
+			if (txtNaam.Text == null | 
+				txtGebruikersnaam.Text == null | 
+				txtWachtwoord.Text == null)
+				return false;
+			else
+				return true;
 		}
 	}
+
 }
 

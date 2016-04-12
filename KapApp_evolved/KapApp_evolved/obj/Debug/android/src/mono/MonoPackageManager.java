@@ -82,8 +82,10 @@ class MonoPackageManager_Resources {
 		"KapApp_evolved.dll",
 		"CC.dll",
 		"zxing.monoandroid.dll",
+		"ZXing.Net.Mobile.dll",
 		"BU.dll",
 		"System.ServiceModel.Internals.dll",
+		"Xamarin.Android.Support.v4.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

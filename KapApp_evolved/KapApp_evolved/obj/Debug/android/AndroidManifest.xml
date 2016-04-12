@@ -20,6 +20,7 @@
     <activity android:label="KrijgAdviesActivity" android:name="md5c681aedf991b54413a1f97e97ac77390.KrijgAdviesActivity" />
     <activity android:label="BekijkHistorie" android:name="md5c681aedf991b54413a1f97e97ac77390.BekijkHistorie" />
     <activity android:label="VerkoperToevoegen" android:name="md5c681aedf991b54413a1f97e97ac77390.VerkoperToevoegen" />
+    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md5514d372efca5c125f0b05b5113ef3a89.ZxingActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.spicey_wraps.kapapp_evolved.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
