@@ -68,25 +68,27 @@ namespace KapApp_evolved
 				txtBenen.Text = advies [3];
 				txtSchoenen.Text = advies [4];
 				txtAccessoires.Text = advies [5];
-
-
 			}
 			else
 				txtAdviesOmschrijving.Text = "Helaas, we hebben geen passend advies kunnen vinden";
 
+			btnInfoBovenlichaam = FindViewById<Button> (Resource.Id.btn_infoBoven);
+			btnInfoBenen = FindViewById<Button> (Resource.Id.btn_infoBenen);
+			btnInfoSchoenen = FindViewById<Button> (Resource.Id.btn_infoSchoenen);
+			btnInfoAccessoires = FindViewById<Button> (Resource.Id.btn_infoAccessoires);
 
 
 
 
 
 
-
-			//btnQR = FindViewById<Button> (Resource.Id.btn_genereerQR);
-			//imgQR = FindViewById<ImageView> (Resource.Id.img_adviesQR);
-			//kortingscode = "2 halen 1 betalen. Geldt voor alle onderbroeken en sokken.";
-			//btnQR.Click += delegate {
-				//imgQR.SetImageBitmap(GetQRCode(kortingscode));
-			//};
+			btnQR = FindViewById<Button> (Resource.Id.btn_genereerQR);
+			kortingscode = "2 halen 1 betalen. Geldt voor alle onderbroeken en sokken.";
+			btnQR.Click += delegate {
+				SetContentView (Resource.Layout.QRCode);
+				imgQR = FindViewById<ImageView>(Resource.Id.img_kortingCodeQR);
+				imgQR.SetImageBitmap(GetQRCode(kortingscode));			
+			};
 		
 		}
 

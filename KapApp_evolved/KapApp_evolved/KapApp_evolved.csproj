@@ -87,6 +87,7 @@
     <AndroidResource Include="Resources\layout\HistorieScherm.axml" />
     <AndroidResource Include="Resources\layout\VerkoperToevoegen.axml" />
     <AndroidResource Include="Resources\layout\AdviesMakenScherm.axml" />
+    <AndroidResource Include="Resources\layout\QRCode.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
