@@ -22,5 +22,13 @@ C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\R.cs.flag
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\uploadflags.txt
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\BU.dll.mdb
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\BU\bin\Debug\BU.dll.mdb
-C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\BU.dll.mdb
-C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\BU\bin\Debug\BU.dll.mdb
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\bin\Debug\BU.dll
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\bin\Debug\BU.pdb
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\bin\Debug\BU.BU.apk
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\bin\Debug\BU.BU-Signed.apk
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\BU.dll
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\BU.pdb
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\android\bin\BU.BU.apk
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\res\values\strings.xml
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\R.cs.flag
+C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\BU\obj\Debug\uploadflags.txt
