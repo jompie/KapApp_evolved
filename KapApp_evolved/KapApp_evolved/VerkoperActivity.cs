@@ -32,8 +32,11 @@ namespace KapApp_evolved
 			btnScanKorting.Click += async(sender, e) => {
 				var scanner = new ZXing.Mobile.MobileBarcodeScanner(this);
 				var result = await scanner.Scan();
-				kortingscode = result.ToString();
-				Toast.MakeText(this, kortingscode, ToastLength.Short).Show();
+				if(result != null)
+				{
+					kortingscode = result.ToString();
+					Toast.MakeText(this, kortingscode, ToastLength.Short).Show();
+				}
 			};
 
 		}

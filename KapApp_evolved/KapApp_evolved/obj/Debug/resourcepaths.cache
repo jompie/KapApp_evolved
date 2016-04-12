@@ -2,7 +2,7 @@
 <Paths>
   <AdditionalAndroidResourcePaths />
   <AdditionalJavaLibraryReferences>
-    <AdditionalJavaLibraryReference>C:\Users\Jean-Paul\AppData\Local\Xamarin\Android.Support.v4\18\content\support\v4\android-support-v4.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\jeanp\AppData\Local\Xamarin\Android.Support.v4\18\content\support\v4\android-support-v4.jar</AdditionalJavaLibraryReference>
   </AdditionalJavaLibraryReferences>
   <AdditionalNativeLibraryReferences />
 </Paths>

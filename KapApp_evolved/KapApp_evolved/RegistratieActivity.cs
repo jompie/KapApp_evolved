@@ -36,7 +36,7 @@ namespace KapApp_evolved
 			SetContentView (Resource.Layout.RegistratieScherm);
 
 			spinAccountType = FindViewById<Spinner> (Resource.Id.spinner_accountType);
-			accountTypes = new string[]{"Klant", "Stylis", "Winkeleigenaar"};
+			accountTypes = new string[]{"Klant", "Stylist", "Winkeleigenaar"};
 			ArrayAdapter adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleSpinnerItem, accountTypes);
 			adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerItem);
 			spinAccountType.Adapter = adapter;
