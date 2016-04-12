@@ -31,6 +31,7 @@ public final class R {
         public static final int contentFrame=0x7f05002e;
         public static final int img_adviesQR=0x7f05000e;
         public static final int linearLayout1=0x7f050000;
+        public static final int spinner_accountType=0x7f05001c;
         public static final int spinner_geslacht=0x7f050002;
         public static final int spinner_haar=0x7f050004;
         public static final int spinner_huid=0x7f050005;
@@ -49,7 +50,6 @@ public final class R {
         public static final int txt_klantWelkom=0x7f050009;
         public static final int txt_loginGebruikersnaam=0x7f05000f;
         public static final int txt_loginWachtwoord=0x7f050011;
-        public static final int txt_regGebruikersType=0x7f05001c;
         public static final int txt_regGebruikersnaam=0x7f050016;
         public static final int txt_regGebruikersnaamVerkoper=0x7f050024;
         public static final int txt_regHerhaalWachtwoord=0x7f05001a;

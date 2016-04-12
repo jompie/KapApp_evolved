@@ -24,8 +24,10 @@ namespace KapApp_evolved
 		EditText txtGebruikersnaam;
 		EditText txtWachtwoord;
 		EditText txtHerhaalWachtwoord;
-		EditText txtGebruikersType;
 		Button btnRegistreer;
+		Spinner spinAccountType;
+		private string accountType;
+		Array accountTypes;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -33,25 +35,32 @@ namespace KapApp_evolved
 
 			SetContentView (Resource.Layout.RegistratieScherm);
 
+			spinAccountType = FindViewById<Spinner> (Resource.Id.spinner_accountType);
+			accountTypes = new string[]{"Klant", "Stylis", "Winkeleigenaar"};
+			ArrayAdapter adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleSpinnerItem, accountTypes);
+			adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerItem);
+			spinAccountType.Adapter = adapter;
+			spinAccountType.ItemSelected += (sender, e) => {
+				accountType = spinAccountType.GetItemAtPosition (e.Position).ToString();
+			};
+
 			txtNaam = FindViewById<EditText> (Resource.Id.txt_regNaam);
 			txtGebruikersnaam = FindViewById<EditText> (Resource.Id.txt_regGebruikersnaam);
 			txtWachtwoord = FindViewById<EditText> (Resource.Id.txt_regWachtwoord);
 			txtHerhaalWachtwoord = FindViewById<EditText> (Resource.Id.txt_regHerhaalWachtwoord);
-			txtGebruikersType = FindViewById<EditText> (Resource.Id.txt_regGebruikersType);
+
 
 			btnRegistreer = FindViewById<Button> (Resource.Id.btn_regRegistreer);
 			btnRegistreer.Click += delegate {
-				string type = txtGebruikersType.Text;
 				bool volledigIngevuld = checkVolledigIngevuld();
 				if (volledigIngevuld){
-					if (type == "Klant" | type == "Stylist" | type == "Winkeleigenaar"){
 						bool gebruikerBestaatAl = bg.GebruikerBestaat(txtGebruikersnaam.Text);
 						if(!gebruikerBestaatAl){
 							if(txtWachtwoord.Text == txtHerhaalWachtwoord.Text){
 								bg.InsertGebruiker(txtNaam.Text, 
 									txtGebruikersnaam.Text, 
 									txtWachtwoord.Text, 
-									txtGebruikersType.Text);
+									accountType);
 								Toast.MakeText (this.BaseContext, "Account aangemaakt", ToastLength.Short).Show ();
 								StartActivity(typeof(MainActivity));
 							}
@@ -60,9 +69,7 @@ namespace KapApp_evolved
 						}
 						else
 							Toast.MakeText (this.BaseContext, "Gebruikersnaam is reeds in gebruik", ToastLength.Short).Show ();
-					}
-					else
-						Toast.MakeText (this.BaseContext, "Ongeldig gebruikerstype", ToastLength.Short).Show ();
+					
 				}
 				else 
 					if(!volledigIngevuld)
@@ -74,8 +81,7 @@ namespace KapApp_evolved
 		{
 			if (txtNaam.Text == null | 
 				txtGebruikersnaam.Text == null | 
-				txtWachtwoord.Text == null | 
-				txtGebruikersType.Text == null)
+				txtWachtwoord.Text == null )
 				return false;
 			else
 				return true;

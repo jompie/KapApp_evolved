@@ -49,11 +49,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView5" />
-    <EditText
-        android:inputType="textMultiLine"
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_regGebruikersType" />
+        android:id="@+id/spinner_accountType"
+        android:spinnerMode="dialog" />
     <Button
         android:text="Registreer"
         android:layout_width="match_parent"

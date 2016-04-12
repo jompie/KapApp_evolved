@@ -81,9 +81,7 @@ C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\De
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\BU.dll
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\Xamarin.Android.Support.v4.dll
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\CC.pdb
-C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\CC.dll.mdb
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\BU.pdb
-C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\BU.dll.mdb
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.csprojResolveAssemblyReference.cache
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.dll
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.pdb

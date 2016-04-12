@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="KapApp_evolved\KapApp_evolved.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="KapApp_evolved\VerkoperToevoegen.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_23" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="KapApp_evolved\VerkoperActivity.cs">
     <Files>
-      <File FileName="KapApp_evolved\MainActivity.cs" Line="47" Column="25" />
-      <File FileName="KapApp_evolved\VerkoperActivity.cs" Line="33" Column="4" />
-      <File FileName="KapApp_evolved\VerkoperToevoegen.cs" Line="53" Column="54" />
-      <File FileName="KapApp_evolved\RegistratieActivity.cs" Line="73" Column="3" />
+      <File FileName="KapApp_evolved\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="KapApp_evolved\VerkoperActivity.cs" Line="23" Column="31" />
+      <File FileName="KapApp_evolved\VerkoperToevoegen.cs" Line="12" Column="22" />
+      <File FileName="KapApp_evolved\RegistratieActivity.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

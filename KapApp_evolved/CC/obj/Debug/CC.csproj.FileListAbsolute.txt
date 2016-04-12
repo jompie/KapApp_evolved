@@ -38,7 +38,6 @@ C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\CC\bin\Debug\CC.CC.ap
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\CC\bin\Debug\CC.CC-Signed.apk
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\CC\bin\Debug\BU.dll
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\CC\bin\Debug\BU.pdb
-C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\CC\bin\Debug\BU.dll.mdb
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\CC\obj\Debug\CC.csprojResolveAssemblyReference.cache
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\CC\obj\Debug\CC.dll
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\CC\obj\Debug\CC.pdb

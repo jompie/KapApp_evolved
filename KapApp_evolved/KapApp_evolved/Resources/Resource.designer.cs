@@ -108,6 +108,9 @@ namespace KapApp_evolved
 			// aapt resource value: 0x7f050000
 			public const int linearLayout1 = 2131034112;
 			
+			// aapt resource value: 0x7f05001c
+			public const int spinner_accountType = 2131034140;
+			
 			// aapt resource value: 0x7f050002
 			public const int spinner_geslacht = 2131034114;
 			
@@ -161,9 +164,6 @@ namespace KapApp_evolved
 			
 			// aapt resource value: 0x7f050011
 			public const int txt_loginWachtwoord = 2131034129;
-			
-			// aapt resource value: 0x7f05001c
-			public const int txt_regGebruikersType = 2131034140;
 			
 			// aapt resource value: 0x7f050016
 			public const int txt_regGebruikersnaam = 2131034134;
