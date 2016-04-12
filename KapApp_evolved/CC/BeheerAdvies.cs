@@ -28,28 +28,32 @@ namespace CC
 		{
 			using (var conn = new SQLiteConnection(GetDatabasePath()))
 			{
-				conn.CreateTable<Basisinstelling>();
+				conn.CreateTable<Advies>();
 				databaseCreated = true;
 			}
 		}
 
 		public void InsertAdvies(
-			int beenmode,
-			int bovenkleding,
-			int schoeisel,
-			int accessoire,
-			string hoortBijBasisinstelling)
+			string adviesOmschrijving,
+			string beenmode,
+			string bovenkleding,
+			string schoeisel,
+			string accessoire,
+			string hoortBijBasisinstelling,
+			string stylist)
 		{
 			databaseCreated = CheckIfCreated ();
 			if (!databaseCreated) {
 				CreateTable ();
 			}
 			Advies advies = new Advies {
+				AdviesOmschrijving = adviesOmschrijving,
 				Beenmode = beenmode,
 				Bovenkleding = bovenkleding,
 				Schoeilsel = schoeisel,
 				Accessoire = accessoire,
-				HoortBijBasisinstelling = hoortBijBasisinstelling};
+				HoortBijBasisinstelling = hoortBijBasisinstelling,
+				Stylist = stylist};
 			using (var db = new SQLiteConnection (GetDatabasePath ())) {
 				db.Insert (advies);
 			}

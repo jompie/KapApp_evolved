@@ -51,6 +51,7 @@
     <Compile Include="BeheerIngelogd.cs" />
     <Compile Include="BeheerBasisinstellingen.cs" />
     <Compile Include="BeheerAdvies.cs" />
+    <Compile Include="BeheerKledingstukken.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

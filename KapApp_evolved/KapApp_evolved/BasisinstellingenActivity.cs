@@ -30,12 +30,12 @@ namespace KapApp_evolved
 
 		Button btnBevestig;
 
-		Array geslachtlijst = new string[]{"Man", "Vrouw"};
-		Array oogkleurlijst = new string[]{"Blauw", "Groen", "Bruin"};
-		Array haarkleurlijst = new string[]{"Blond", "Bruin", "Rood", "Zwart"};
-		Array ondertoonlijst = new string[]{"Koel", "Warm"};
-		Array kleurtypelijst = new string[]{"Lente", "Zomer", "Herfst", "Winter"};
-		Array Lichaamstypelijst = new string[]{"Smal", "Gemiddeld", "Fors"};
+		private Array geslachtlijst = new string[]{"Man", "Vrouw"};
+		private Array oogkleurlijst = new string[]{"Blauw", "Groen", "Bruin"};
+		private Array haarkleurlijst = new string[]{"Blond", "Bruin", "Rood", "Zwart"};
+		private Array ondertoonlijst = new string[]{"Koel", "Warm"};
+		private Array kleurtypelijst = new string[]{"Lente", "Zomer", "Herfst", "Winter"};
+		private Array Lichaamstypelijst = new string[]{"Smal", "Gemiddeld", "Fors"};
 
 		string geslacht;
 		string oogkleur;

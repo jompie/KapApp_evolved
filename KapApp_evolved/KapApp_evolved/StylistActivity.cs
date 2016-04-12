@@ -29,7 +29,7 @@ namespace KapApp_evolved
 			// Als deze button wordt ingedruk, wordt een scherm geladen waar de stylist een advies kan samenstellen
 			btn_stelAdviesSamen = FindViewById<Button> (Resource.Id.btn_stylistStelAdviesSamen);
 			btn_stelAdviesSamen.Click += delegate {
-				//StartActivity(typeof());
+				StartActivity(typeof(AdviesMaken));
 			};
 
 			// Browse catalogus

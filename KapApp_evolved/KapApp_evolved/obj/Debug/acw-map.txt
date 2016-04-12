@@ -38,6 +38,10 @@ KapApp_evolved.VerkoperToevoegen, KapApp_evolved;md5c681aedf991b54413a1f97e97ac7
 KapApp_evolved.VerkoperToevoegen, KapApp_evolved, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c681aedf991b54413a1f97e97ac77390.VerkoperToevoegen
 KapApp_evolved.VerkoperToevoegen;md5c681aedf991b54413a1f97e97ac77390.VerkoperToevoegen
 kapapp_evolved.VerkoperToevoegen;md5c681aedf991b54413a1f97e97ac77390.VerkoperToevoegen
+KapApp_evolved.AdviesMaken, KapApp_evolved;md5c681aedf991b54413a1f97e97ac77390.AdviesMaken
+KapApp_evolved.AdviesMaken, KapApp_evolved, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c681aedf991b54413a1f97e97ac77390.AdviesMaken
+KapApp_evolved.AdviesMaken;md5c681aedf991b54413a1f97e97ac77390.AdviesMaken
+kapapp_evolved.AdviesMaken;md5c681aedf991b54413a1f97e97ac77390.AdviesMaken
 ZXing.Mobile.ZxingActivity, ZXing.Net.Mobile;md5514d372efca5c125f0b05b5113ef3a89.ZxingActivity
 ZXing.Mobile.ZxingActivity, ZXing.Net.Mobile, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null;md5514d372efca5c125f0b05b5113ef3a89.ZxingActivity
 ZXing.Mobile.ZxingActivity;md5514d372efca5c125f0b05b5113ef3a89.ZxingActivity

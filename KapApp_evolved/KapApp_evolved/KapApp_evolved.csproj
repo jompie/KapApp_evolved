@@ -62,6 +62,7 @@
     <Compile Include="KrijgAdviesActivity.cs" />
     <Compile Include="BekijkHistorie.cs" />
     <Compile Include="VerkoperToevoegen.cs" />
+    <Compile Include="AdviesMaken.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -85,6 +86,7 @@
     <AndroidResource Include="Resources\layout\KrijgAdviesScherm.axml" />
     <AndroidResource Include="Resources\layout\HistorieScherm.axml" />
     <AndroidResource Include="Resources\layout\VerkoperToevoegen.axml" />
+    <AndroidResource Include="Resources\layout\AdviesMakenScherm.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
