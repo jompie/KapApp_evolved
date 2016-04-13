@@ -4,7 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:weightSum="80">
+    android:weightSum="70">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100">
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="60" />
+        <Button
+            android:text="Terug"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:id="@+id/btn_basisTerug" />
+    </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -104,28 +121,6 @@
         android:layout_weight="10"
         android:gravity="center">
         <TextView
-            android:text="KleurType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:layout_weight="75" />
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner_kleurType"
-            android:layout_weight="25" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:weightSum="100"
-        android:layout_weight="10"
-        android:gravity="center">
-        <TextView
             android:text="Lichaamstype"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -142,5 +137,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_basisBevestigen"
-        android:layout_weight="20" />
+        android:layout_weight="10" />
 </LinearLayout>

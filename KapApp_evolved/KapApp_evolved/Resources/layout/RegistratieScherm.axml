@@ -4,6 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:paddingBottom="20dp">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60" />
+        <Button
+            android:text="Terug"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_regTerug"
+            android:layout_weight="40" />
+    </LinearLayout>
     <TextView
         android:text="Naam"
         android:layout_width="match_parent"
@@ -33,7 +52,8 @@
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_regWachtwoord" />
+        android:id="@+id/txt_regWachtwoord"
+        android:password="true" />
     <TextView
         android:text="Herhaal wachtwoord"
         android:layout_width="match_parent"
@@ -43,7 +63,8 @@
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_regHerhaalWachtwoord" />
+        android:id="@+id/txt_regHerhaalWachtwoord"
+        android:password="true" />
     <TextView
         android:text="Gebruikerstype"
         android:layout_width="match_parent"

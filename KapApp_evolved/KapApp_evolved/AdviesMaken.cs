@@ -24,15 +24,13 @@ namespace KapApp_evolved
 
 		EditText adviesOmschrijving;
 		Button btnBevestigen;
+		Button btnTerug;
 
 		Spinner spinBovenlichaam;
 		Spinner spinBenen;
 		Spinner spinSchoenen;
 		Spinner spinAccessoires;
 		Spinner spinGeslacht;
-		Spinner spinOogkleur;
-		Spinner spinHaarkleur;
-		Spinner spinOndertoon;
 		Spinner spinKleurtype;
 		Spinner spinLichaamstype;
 
@@ -42,16 +40,10 @@ namespace KapApp_evolved
 		private string accessoires;
 
 		private string geslacht;
-		private string oogkleur;
-		private string haarkleur;
-		private string ondertoon;
 		private string kleurtype;
 		private string lichaamstype;
 
 		private Array geslachtlijst = new string[]{"Man", "Vrouw"};
-		private Array oogkleurlijst = new string[]{"Blauw", "Groen", "Bruin"};
-		private Array haarkleurlijst = new string[]{"Blond", "Bruin", "Rood", "Zwart"};
-		private Array ondertoonlijst = new string[]{"Koel", "Warm"};
 		private Array kleurtypelijst = new string[]{"Lente", "Zomer", "Herfst", "Winter"};
 		private Array Lichaamstypelijst = new string[]{"Smal", "Gemiddeld", "Fors"};
 
@@ -72,9 +64,6 @@ namespace KapApp_evolved
 			spinAccessoires = FindViewById<Spinner> (Resource.Id.spinner_accessoires);
 
 			spinGeslacht = FindViewById<Spinner> (Resource.Id.spinner_geslacht);
-			spinOogkleur = FindViewById<Spinner> (Resource.Id.spinner_oog);
-			spinHaarkleur = FindViewById<Spinner> (Resource.Id.spinner_haar);
-			spinOndertoon = FindViewById<Spinner> (Resource.Id.spinner_huid);
 			spinKleurtype = FindViewById<Spinner> (Resource.Id.spinner_kleurType);
 			spinLichaamstype = FindViewById<Spinner> (Resource.Id.spinner_lichaam);
 
@@ -93,9 +82,6 @@ namespace KapApp_evolved
 			zetInSpinner (accessoireslijst, spinAccessoires);
 
 			zetInSpinner (geslachtlijst, spinGeslacht);
-			zetInSpinner (oogkleurlijst, spinOogkleur);
-			zetInSpinner (haarkleurlijst, spinHaarkleur);
-			zetInSpinner (ondertoonlijst, spinOndertoon);
 			zetInSpinner (kleurtypelijst, spinKleurtype);
 			zetInSpinner (Lichaamstypelijst, spinLichaamstype);
 
@@ -119,18 +105,6 @@ namespace KapApp_evolved
 				geslacht = spinnerWaardeSelectie(sender, e);
 			};
 
-			spinOogkleur.ItemSelected += (sender, e) => {
-				oogkleur = spinnerWaardeSelectie(sender, e);
-			};
-
-			spinHaarkleur.ItemSelected += (sender, e) => {
-				haarkleur = spinnerWaardeSelectie(sender, e);
-			};
-
-			spinOndertoon.ItemSelected += (sender, e) => {
-				ondertoon = spinnerWaardeSelectie(sender, e);
-			};
-
 			spinKleurtype.ItemSelected += (sender, e) => {
 				kleurtype = spinnerWaardeSelectie(sender, e);
 			};
@@ -143,8 +117,13 @@ namespace KapApp_evolved
 
 			btnBevestigen = FindViewById<Button> (Resource.Id.btn_adviesMakenBevestigen);
 			btnBevestigen.Click += delegate {
-				ba.InsertAdvies(adviesOmschrijving.Text, benen, bovenlichaam, schoenen, accessoires, geslacht+oogkleur+haarkleur+ondertoon+kleurtype+lichaamstype, ingelogdAls);
+				ba.InsertAdvies(adviesOmschrijving.Text, benen, bovenlichaam, schoenen, accessoires, geslacht+kleurtype+lichaamstype, ingelogdAls);
 				Toast.MakeText(this, "Advies Succesvol aangemaakt", ToastLength.Short).Show();
+				StartActivity(typeof(StylistActivity));
+			};
+
+			btnTerug = FindViewById<Button> (Resource.Id.btn_adviesMakenTerug);
+			btnTerug.Click += delegate {
 				StartActivity(typeof(StylistActivity));
 			};
 		}
@@ -163,6 +142,8 @@ namespace KapApp_evolved
 			string value = spinner.GetItemAtPosition (e.Position).ToString();
 			return value;
 		}
+
+
 			
 	}
 }

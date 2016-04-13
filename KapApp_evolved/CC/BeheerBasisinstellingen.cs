@@ -60,7 +60,7 @@ namespace CC
 			}
 		}
 
-		public string GetBasisInstellingen(string gebruikersnaamKlant)
+		public string GetGeslachtKleurtypeLichaamstype(string gebruikersnaamKlant)
 		{
 			databaseCreated = CheckIfCreated ();
 			if (databaseCreated) {
@@ -68,8 +68,8 @@ namespace CC
 					List<Basisinstelling> basis = db.Query<Basisinstelling> ("SELECT * FROM BASISINSTELLING WHERE GEBRUIKERSNAAMKLANT = '" + gebruikersnaamKlant + "' ORDER BY IDBASISINSTELLING DESC LIMIT 1");
 					if (basis.Count > 0) {
 						Basisinstelling p = basis [0];
-						string geslacht = p.Geslacht + p.Oogkleur + p.Haarkleur + p.Ondertoon + p.Kleurtype + p.Lichaamstype;
-						return geslacht;
+						string gkl = p.Geslacht + p.Kleurtype + p.Lichaamstype;
+						return gkl;
 					}
 				}
 			}

@@ -29,6 +29,8 @@ namespace KapApp_evolved
 		private string accountType;
 		Array accountTypes;
 
+		Button btnTerug;
+
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -71,17 +73,24 @@ namespace KapApp_evolved
 							Toast.MakeText (this.BaseContext, "Gebruikersnaam is reeds in gebruik", ToastLength.Short).Show ();
 					
 				}
-				else 
-					if(!volledigIngevuld)
-						Toast.MakeText (this.BaseContext, "Formulier is niet volledig ingevuld", ToastLength.Short).Show ();
+				else
+					Toast.MakeText (this.BaseContext, "Formulier is niet volledig ingevuld", ToastLength.Short).Show ();
+			};
+
+			btnTerug = FindViewById<Button>(Resource.Id.btn_regTerug);
+			btnTerug.Click += delegate {
+				StartActivity(typeof(MainActivity));
 			};
 
 		}
 		private bool checkVolledigIngevuld()
 		{
-			if (txtNaam.Text == null | 
-				txtGebruikersnaam.Text == null | 
-				txtWachtwoord.Text == null )
+			if (txtNaam.Text == "")
+				return false;
+			if (txtGebruikersnaam.Text == "")
+				return false;
+			
+			if(txtWachtwoord.Text == "")
 				return false;
 			else
 				return true;

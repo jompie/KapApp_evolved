@@ -12,7 +12,7 @@ namespace BU
 		public string Bovenkleding { get; set; }   //T-shirts, truien, jassen, etc.
 		public string Schoeilsel { get; set; }		//Sneakers, laarzen, slippers, etc.
 		public string Accessoire { get; set; } 	//Horloge, ketting, oorbellen, etc.
-		public string HoortBijBasisinstelling { get; set; } //bijv. ManBlauwBlondWarmZomerFlink
+		public string HoortBij { get; set; } //bijv. GeslachtKleurtypeLichaamstype
 		public string Stylist { get; set; }
 	}
 }

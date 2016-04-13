@@ -16,11 +16,18 @@ namespace KapApp_evolved
 	[Activity (Label = "BekijkHistorie")]			
 	public class BekijkHistorie : Activity
 	{
+		Button btnTerug;
+		
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
 
 			SetContentView (Resource.Layout.HistorieScherm);
+
+			btnTerug = FindViewById<Button> (Resource.Id.btn_historieTerug);
+			btnTerug.Click += delegate {
+				StartActivity(typeof(MainActivity));
+			};
 
 		}
 	}

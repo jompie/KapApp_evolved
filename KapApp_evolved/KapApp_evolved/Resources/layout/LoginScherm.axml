@@ -24,7 +24,8 @@
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_loginWachtwoord" />
+        android:id="@+id/txt_loginWachtwoord"
+        android:password="true" />
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"

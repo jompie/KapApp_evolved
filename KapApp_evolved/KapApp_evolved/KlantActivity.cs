@@ -24,6 +24,7 @@ namespace KapApp_evolved
 		Button btn_basisinstellinen;
 		Button btn_krijgAdvies;
 		Button btn_historie;
+		Button btn_logUit;
 
 		private string ingelogdAls;
 
@@ -51,6 +52,11 @@ namespace KapApp_evolved
 			btn_historie = FindViewById<Button> (Resource.Id.btn_klantHistorie);
 			btn_historie.Click += delegate {
 				StartActivity(typeof(BekijkHistorie));
+			};
+
+			btn_logUit = FindViewById<Button> (Resource.Id.btn_klantLogUit);
+			btn_logUit.Click += delegate {
+				StartActivity(typeof(MainActivity));
 			};
 		}
 	}

@@ -17,7 +17,8 @@ namespace KapApp_evolved
 	public class StylistActivity : Activity
 	{
 		Button btn_stelAdviesSamen;
-		Button btn_browseCatalogs;
+		Button btn_browseCatalogus;
+		Button btnLogUit;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -34,9 +35,13 @@ namespace KapApp_evolved
 
 			// Browse catalogus
 			// Als deze button wordt ingedrukt, wordt een scherm geladen waar de stylist catalogussen kan browsen.
-			btn_browseCatalogs = FindViewById<Button>(Resource.Id.btn_stylistBrowse);
-			btn_browseCatalogs.Click += delegate {
+			btn_browseCatalogus = FindViewById<Button>(Resource.Id.btn_stylistBrowse);
+			btn_browseCatalogus.Click += delegate {
 				//StartActivity(typeoff());
+			};
+			btnLogUit = FindViewById<Button> (Resource.Id.btn_stylistLogUit);
+			btnLogUit.Click += delegate {
+				StartActivity(typeof(MainActivity));
 			};
 		}
 	}

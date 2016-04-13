@@ -25,25 +25,24 @@ namespace KapApp_evolved
 		Spinner spinOogkleur;
 		Spinner spinHaarkleur;
 		Spinner spinOndertoon;
-		Spinner spinkleurtype;
 		Spinner spinLichaamstype;
 
 		Button btnBevestig;
+		Button btnTerug;
 
 		private Array geslachtlijst = new string[]{"Man", "Vrouw"};
 		private Array oogkleurlijst = new string[]{"Blauw", "Groen", "Bruin"};
 		private Array haarkleurlijst = new string[]{"Blond", "Bruin", "Rood", "Zwart"};
 		private Array ondertoonlijst = new string[]{"Koel", "Warm"};
-		private Array kleurtypelijst = new string[]{"Lente", "Zomer", "Herfst", "Winter"};
 		private Array Lichaamstypelijst = new string[]{"Smal", "Gemiddeld", "Fors"};
 
 		string geslacht;
 		string oogkleur;
 		string haarkleur;
 		string ondertoon;
-		string kleurtype;
 		string lichaamstype;
 		string gebruikersnaamKlant;
+		string kleurtype;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -56,7 +55,6 @@ namespace KapApp_evolved
 			spinOogkleur = FindViewById<Spinner> (Resource.Id.spinner_oog);
 			spinHaarkleur = FindViewById<Spinner> (Resource.Id.spinner_haar);
 			spinOndertoon = FindViewById<Spinner> (Resource.Id.spinner_huid);
-			spinkleurtype = FindViewById<Spinner> (Resource.Id.spinner_kleurType);
 			spinLichaamstype = FindViewById<Spinner> (Resource.Id.spinner_lichaam);
 
 			// Set content spinners
@@ -64,7 +62,6 @@ namespace KapApp_evolved
 			zetInSpinner (oogkleurlijst, spinOogkleur);
 			zetInSpinner (haarkleurlijst, spinHaarkleur);
 			zetInSpinner (ondertoonlijst, spinOndertoon);
-			zetInSpinner (kleurtypelijst, spinkleurtype);
 			zetInSpinner (Lichaamstypelijst, spinLichaamstype);
 
 //			geslacht = spinnerSelectieGemaakt (spinGeslacht, geslacht);
@@ -76,42 +73,47 @@ namespace KapApp_evolved
 
 			spinGeslacht.ItemSelected += (sender, e) =>
 			{
-				geslacht = spinnerWaardeSelectie(sender, e);		
+				geslacht = spinnerWaardeSelectie(sender, e);
+				Toast.MakeText(this, geslacht, ToastLength.Short).Show();
 			};
 
 			spinOogkleur.ItemSelected += (sender, e) =>
 			{
-				oogkleur = spinnerWaardeSelectie(sender, e);		
+				oogkleur = spinnerWaardeSelectie(sender, e);
+				Toast.MakeText(this, oogkleur, ToastLength.Short).Show();
 			};
 
 			spinHaarkleur.ItemSelected += (sender, e) =>
 			{
-				haarkleur = spinnerWaardeSelectie(sender, e);		
+				haarkleur = spinnerWaardeSelectie(sender, e);
+				Toast.MakeText(this, haarkleur, ToastLength.Short).Show();
 			};
 
 			spinOndertoon.ItemSelected += (sender, e) =>
 			{
-				ondertoon = spinnerWaardeSelectie(sender, e);		
-			};
-
-			spinkleurtype.ItemSelected += (sender, e) =>
-			{
-				kleurtype = spinnerWaardeSelectie(sender, e);		
+				ondertoon = spinnerWaardeSelectie(sender, e);
+				Toast.MakeText(this, ondertoon, ToastLength.Short).Show();
 			};
 
 			spinLichaamstype.ItemSelected += (sender, e) =>
 			{
-				lichaamstype = spinnerWaardeSelectie(sender, e);		
+				lichaamstype = spinnerWaardeSelectie(sender, e);
+				Toast.MakeText(this, lichaamstype, ToastLength.Short).Show();
 			};
 
 			gebruikersnaamKlant = bi.GetIngelogd ();
+			kleurtype = bepaalKleurtype (oogkleur, haarkleur, ondertoon);
 
 			btnBevestig = FindViewById<Button> (Resource.Id.btn_basisBevestigen);
 			btnBevestig.Click += delegate {
 				//Zet waarden van spinners in een databes
 				bb.InsertBasisinstelling(geslacht, oogkleur, haarkleur, ondertoon, kleurtype, lichaamstype, gebruikersnaamKlant);
-				SetContentView(Resource.Layout.KlantScherm);
+				StartActivity(typeof(KlantActivity));
 				Toast.MakeText(this, "Basisinstellingen opgeslagen", ToastLength.Short).Show();
+			};
+			btnTerug = FindViewById<Button> (Resource.Id.btn_basisTerug);
+			btnTerug.Click += delegate {
+				StartActivity(typeof(KlantActivity));
 			};
 
 		}
@@ -131,6 +133,26 @@ namespace KapApp_evolved
 			return value;
 		}
 
+		private string bepaalKleurtype(string oog, string haar, string ondertoon)
+		{
+			if (ondertoon == "Koel")
+			{
+				if (oog == "Blauw" | oog == "Groen")
+					return "Zomer";
+				
+				else
+					return "Winter";
+			}
+			if (ondertoon == "Warm") 
+			{
+				if (haar == "Rood" | oog == "Blauw" | oog =="Groen")
+					return "Lente";
+				else 
+					return "Herfts";
+			}
+			return null;
+
+		}
 //		private string spinnerSelectieGemaakt(Spinner spinner, string waarde)
 //		{
 //			spinner.ItemSelected += (sender, e) =>

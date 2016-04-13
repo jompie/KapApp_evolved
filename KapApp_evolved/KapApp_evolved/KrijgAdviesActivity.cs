@@ -39,9 +39,10 @@ namespace KapApp_evolved
 		Button btnInfoBenen;
 		Button btnInfoSchoenen;
 		Button btnInfoAccessoires;
+		Button btnTerug;
 
 		private string ingelogdAls;
-		private string basisInstelling;
+		private string geslachtKleurLichaam;
 		private List<string> advies;
 		private bool adviesGevonden;
 
@@ -58,11 +59,12 @@ namespace KapApp_evolved
 			txtAccessoires = FindViewById<TextView> (Resource.Id.txt_accessoiresOmschrijving);
 
 			ingelogdAls = bi.GetIngelogd ();
-			basisInstelling = bb.GetBasisInstellingen (ingelogdAls);
-			adviesGevonden = ba.PassendAdvies (basisInstelling);
+			geslachtKleurLichaam = bb.GetGeslachtKleurtypeLichaamstype (ingelogdAls);
+			Toast.MakeText (this, geslachtKleurLichaam, ToastLength.Short).Show ();
+			adviesGevonden = ba.PassendAdvies (geslachtKleurLichaam);
 			if (adviesGevonden) 
 			{
-				advies = ba.KrijgAdvies (basisInstelling);
+				advies = ba.KrijgAdvies (geslachtKleurLichaam);
 				txtAdviesOmschrijving.Text = advies [0];
 				txtStylistNaam.Text = advies [1];
 				txtBovenlichaam.Text = advies [2];
@@ -101,6 +103,11 @@ namespace KapApp_evolved
 				imgQR = FindViewById<ImageView>(Resource.Id.img_kortingCodeQR);
 				imgQR.SetImageBitmap(GetQRCode(kortingscode));			
 			};
+
+			btnTerug = FindViewById<Button> (Resource.Id.btn_krijgAdviesTerug);
+			btnTerug.Click += delegate {
+				StartActivity(typeof(KlantActivity));
+			};
 		
 		}
 
@@ -130,6 +137,7 @@ namespace KapApp_evolved
 				StartActivity(typeof(KrijgAdviesActivity));
 			};
 		}
+
 	}
 }
 

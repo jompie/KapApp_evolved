@@ -40,7 +40,7 @@ namespace CC
 			string bovenkleding,
 			string schoeisel,
 			string accessoire,
-			string hoortBijBasisinstelling,
+			string hoortBij,
 			string stylist)
 		{
 			databaseCreated = CheckIfCreated ();
@@ -53,19 +53,19 @@ namespace CC
 				Bovenkleding = bovenkleding,
 				Schoeilsel = schoeisel,
 				Accessoire = accessoire,
-				HoortBijBasisinstelling = hoortBijBasisinstelling,
+				HoortBij = hoortBij,
 				Stylist = stylist};
 			using (var db = new SQLiteConnection (GetDatabasePath ())) {
 				db.Insert (advies);
 			}
 		}
 
-		public List<String> KrijgAdvies(string basisinstelling)
+		public List<String> KrijgAdvies(string hoortbij)
 		{
 			databaseCreated = CheckIfCreated ();
 			if (databaseCreated) {
 				using (var db = new SQLiteConnection (GetDatabasePath ())) {
-					List<Advies> adviezen = db.Query<Advies> ("SELECT * FROM ADVIES WHERE HoortBijBasisinstelling = '" + basisinstelling + "' ORDER BY IDADVIES DESC LIMIT 1");
+					List<Advies> adviezen = db.Query<Advies> ("SELECT * FROM ADVIES WHERE HoortBij = '" + hoortbij + "' ORDER BY IDADVIES DESC LIMIT 1");
 					if (adviezen.Count > 0) {
 						Advies p = adviezen [0];
 						List<string> advies = new List<string> (){ p.AdviesOmschrijving, p.Stylist, p.Bovenkleding, p.Beenmode, p.Schoeilsel, p.Accessoire };
@@ -76,12 +76,12 @@ namespace CC
 			return null;
 		}
 
-		public bool PassendAdvies(string basisinstelling)
+		public bool PassendAdvies(string hoortbij)
 		{
 			databaseCreated = CheckIfCreated ();
 			if (databaseCreated) {
 				using (var db = new SQLiteConnection (GetDatabasePath ())) {
-					List<Advies> adviezen = db.Query<Advies> ("SELECT * FROM ADVIES WHERE HoortBijBasisinstelling = '" + basisinstelling + "' ORDER BY IDADVIES DESC LIMIT 1");
+					List<Advies> adviezen = db.Query<Advies> ("SELECT * FROM ADVIES WHERE HoortBij = '" + hoortbij + "' ORDER BY IDADVIES DESC LIMIT 1");
 					if (adviezen.Count > 0)
 						return true;
 				}
