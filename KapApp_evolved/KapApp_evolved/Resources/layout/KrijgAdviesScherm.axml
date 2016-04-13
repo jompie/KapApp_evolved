@@ -204,13 +204,13 @@
             android:text="Toevoegen aan favorieten"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/button1"
+            android:id="@+id/btn_addFavoriet"
             android:layout_weight="10" />
         <Button
             android:text="Niet leuk"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/button1"
+            android:id="@+id/btn_nietLeuk"
             android:layout_weight="10" />
     </LinearLayout>
 </LinearLayout>

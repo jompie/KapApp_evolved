@@ -74,6 +74,7 @@ C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\De
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\CC.dll.mdb
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.dll.mdb
 C:\Users\Jean-Paul\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\KapApp_evolved.dll.mdb
+C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.csprojResolveAssemblyReference.cache
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\KapApp_evolved.dll
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\KapApp_evolved.pdb
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\com.spicey_wraps.kapapp_evolved.apk
@@ -110,7 +111,6 @@ C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\res\layout\catalogustoevoegen.xml
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\R.cs.flag
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\uploadflags.txt
-C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.csprojResolveAssemblyReference.cache
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\CC.dll.mdb
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.dll.mdb
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\KapApp_evolved.dll.mdb

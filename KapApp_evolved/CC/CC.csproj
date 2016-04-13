@@ -49,6 +49,7 @@
     <Compile Include="BeheerBasisinstellingen.cs" />
     <Compile Include="BeheerAdvies.cs" />
     <Compile Include="BeheerKledingstukken.cs" />
+    <Compile Include="Resources\BeheerFavorieten.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

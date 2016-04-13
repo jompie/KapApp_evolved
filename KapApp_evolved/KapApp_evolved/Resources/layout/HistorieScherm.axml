@@ -25,8 +25,14 @@
             android:id="@+id/btn_historieTerug" />
     </LinearLayout>
     <TextView
-        android:text="Op dit scherm kan de klant een overzicht vinden van adviezen die hij op een eerder tijdstip heeft gekregen."
+        android:text="Hieronder vindt je een overzicht van alle adviezen die je hebt toegevoegd aan favorieten"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_favorieten" />
 </LinearLayout>

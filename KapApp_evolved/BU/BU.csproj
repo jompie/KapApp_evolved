@@ -56,6 +56,7 @@
     <Compile Include="Kledingstuk.cs" />
     <Compile Include="Basisinstelling.cs" />
     <Compile Include="Ingelogd.cs" />
+    <Compile Include="Favorietenlijst.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -23,6 +23,7 @@ namespace KapApp_evolved
 		BeheerIngelogd bi = new BeheerIngelogd ();
 		BeheerBasisinstellingen bb = new BeheerBasisinstellingen ();
 		BeheerKledingstukken bk = new BeheerKledingstukken ();
+		BeheerFavorieten bf = new BeheerFavorieten ();
 
 		Button btnQR;
 		ImageView imgQR;
@@ -40,6 +41,9 @@ namespace KapApp_evolved
 		Button btnInfoSchoenen;
 		Button btnInfoAccessoires;
 		Button btnTerug;
+		Button btnFavoriet;
+		Button btnNietLeuk;
+
 
 		private string ingelogdAls;
 		private string geslachtKleurLichaam;
@@ -60,7 +64,6 @@ namespace KapApp_evolved
 
 			ingelogdAls = bi.GetIngelogd ();
 			geslachtKleurLichaam = bb.GetGeslachtKleurtypeLichaamstype (ingelogdAls);
-			Toast.MakeText (this, geslachtKleurLichaam, ToastLength.Short).Show ();
 			adviesGevonden = ba.PassendAdvies (geslachtKleurLichaam);
 			if (adviesGevonden) 
 			{
@@ -93,8 +96,16 @@ namespace KapApp_evolved
 				SetInfoscherm(txtAccessoires.Text);
 			};
 
+			btnFavoriet = FindViewById<Button> (Resource.Id.btn_addFavoriet);
+			btnFavoriet.Click += delegate {
+				bf.InsertFavoriet(txtAdviesOmschrijving.Text, ingelogdAls);
+				Toast.MakeText(this, "Toegevoegd aan Favorieten", ToastLength.Short).Show();
+			};
 
-
+			btnNietLeuk = FindViewById<Button> (Resource.Id.btn_nietLeuk);
+			btnNietLeuk.Click+= delegate {
+				//Handle niet leuk event
+			};
 
 			btnQR = FindViewById<Button> (Resource.Id.btn_genereerQR);
 			kortingscode = "2 halen 1 betalen. Geldt voor alle onderbroeken en sokken.";
