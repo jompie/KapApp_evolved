@@ -74,39 +74,40 @@ namespace KapApp_evolved
 			spinGeslacht.ItemSelected += (sender, e) =>
 			{
 				geslacht = spinnerWaardeSelectie(sender, e);
-				Toast.MakeText(this, geslacht, ToastLength.Short).Show();
+				//Toast.MakeText(this, geslacht, ToastLength.Short).Show();
 			};
 
 			spinOogkleur.ItemSelected += (sender, e) =>
 			{
 				oogkleur = spinnerWaardeSelectie(sender, e);
-				Toast.MakeText(this, oogkleur, ToastLength.Short).Show();
+				//Toast.MakeText(this, oogkleur, ToastLength.Short).Show();
 			};
 
 			spinHaarkleur.ItemSelected += (sender, e) =>
 			{
 				haarkleur = spinnerWaardeSelectie(sender, e);
-				Toast.MakeText(this, haarkleur, ToastLength.Short).Show();
+				//Toast.MakeText(this, haarkleur, ToastLength.Short).Show();
 			};
 
 			spinOndertoon.ItemSelected += (sender, e) =>
 			{
 				ondertoon = spinnerWaardeSelectie(sender, e);
-				Toast.MakeText(this, ondertoon, ToastLength.Short).Show();
+				//Toast.MakeText(this, ondertoon, ToastLength.Short).Show();
 			};
 
 			spinLichaamstype.ItemSelected += (sender, e) =>
 			{
 				lichaamstype = spinnerWaardeSelectie(sender, e);
-				Toast.MakeText(this, lichaamstype, ToastLength.Short).Show();
+				//Toast.MakeText(this, lichaamstype, ToastLength.Short).Show();
 			};
 
 			gebruikersnaamKlant = bi.GetIngelogd ();
-			kleurtype = bepaalKleurtype (oogkleur, haarkleur, ondertoon);
+
 
 			btnBevestig = FindViewById<Button> (Resource.Id.btn_basisBevestigen);
 			btnBevestig.Click += delegate {
 				//Zet waarden van spinners in een databes
+				kleurtype = bepaalKleurtype (oogkleur, haarkleur, ondertoon);
 				bb.InsertBasisinstelling(geslacht, oogkleur, haarkleur, ondertoon, kleurtype, lichaamstype, gebruikersnaamKlant);
 				StartActivity(typeof(KlantActivity));
 				Toast.MakeText(this, "Basisinstellingen opgeslagen", ToastLength.Short).Show();
@@ -135,16 +136,21 @@ namespace KapApp_evolved
 
 		private string bepaalKleurtype(string oog, string haar, string ondertoon)
 		{
-			if (ondertoon == "Koel")
+			Toast.MakeText(this, "ondertoon:"+ondertoon, ToastLength.Short).Show();
+			if ( ondertoon == "Koel")
 			{
+				Toast.MakeText(this, "koele shit", ToastLength.Short).Show();
+				
 				if (oog == "Blauw" | oog == "Groen")
 					return "Zomer";
 				
 				else
 					return "Winter";
 			}
-			if (ondertoon == "Warm") 
+			else
+				if ( ondertoon == "Warm") 
 			{
+				Toast.MakeText(this, "warme shit", ToastLength.Short).Show();
 				if (haar == "Rood" | oog == "Blauw" | oog =="Groen")
 					return "Lente";
 				else 

@@ -122,6 +122,7 @@ namespace KapApp_evolved
 			};
 			return writer.Write (tekst);
 		}
+			
 
 		private void SetInfoscherm(string productomschrijving)
 		{
