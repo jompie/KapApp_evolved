@@ -51,11 +51,17 @@ namespace KapApp_evolved
 
 			btnToevoegen = FindViewById<Button> (Resource.Id.btn_toevoegenKledingstuk);
 			btnToevoegen.Click += delegate {
-				int prijs = Convert.ToInt32(txtPrijs.Text);
-				int korting = Convert.ToInt32(txtKorting.Text);
-				bk.InsertKledingstuk(txtOmschrijving.Text, prijs, korting , kledingtype);
-				Toast.MakeText(this, "Kledingstuk toegevoegd aan catalogus", ToastLength.Short).Show();
-				StartActivity(typeof(WinkeleigenaarActivity));
+				bool bestaatAl = bk.KledingstukBestaat(txtOmschrijving.Text);
+				if(!bestaatAl)
+				{
+					int prijs = Convert.ToInt32(txtPrijs.Text);
+					int korting = Convert.ToInt32(txtKorting.Text);
+					bk.InsertKledingstuk(txtOmschrijving.Text, prijs, korting , kledingtype);
+					Toast.MakeText(this, "Kledingstuk toegevoegd aan catalogus", ToastLength.Short).Show();
+					StartActivity(typeof(WinkeleigenaarActivity));
+				}
+				else
+					Toast.MakeText(this, "Er bestaat al een kledingstuk met de naam: "+txtOmschrijving.Text, ToastLength.Short).Show();
 			};
 
 			btnAddPlaatje = FindViewById<Button> (Resource.Id.btn_plaatjeToevoegen);

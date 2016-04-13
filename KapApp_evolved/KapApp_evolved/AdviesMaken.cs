@@ -117,9 +117,15 @@ namespace KapApp_evolved
 
 			btnBevestigen = FindViewById<Button> (Resource.Id.btn_adviesMakenBevestigen);
 			btnBevestigen.Click += delegate {
-				ba.InsertAdvies(adviesOmschrijving.Text, benen, bovenlichaam, schoenen, accessoires, geslacht+kleurtype+lichaamstype, ingelogdAls);
-				Toast.MakeText(this, "Advies Succesvol aangemaakt", ToastLength.Short).Show();
-				StartActivity(typeof(StylistActivity));
+				bool bestaatAl = ba.AdviesBestaat(adviesOmschrijving.Text);
+				if(!bestaatAl)
+				{
+					ba.InsertAdvies(adviesOmschrijving.Text, benen, bovenlichaam, schoenen, accessoires, geslacht+kleurtype+lichaamstype, ingelogdAls);
+					Toast.MakeText(this, "Advies Succesvol aangemaakt", ToastLength.Short).Show();
+					StartActivity(typeof(StylistActivity));
+				}
+				else
+					Toast.MakeText(this, "Er bestaat al een advies met de naam: "+adviesOmschrijving.Text, ToastLength.Short).Show();
 			};
 
 			btnTerug = FindViewById<Button> (Resource.Id.btn_adviesMakenTerug);

@@ -89,6 +89,19 @@ namespace CC
 			return false;
 		}
 
+		public bool AdviesBestaat(string omschrijving)
+		{
+			databaseCreated = CheckIfCreated ();
+			if (databaseCreated) {
+				using (var db = new SQLiteConnection (GetDatabasePath ())) {
+					List<Advies> adviezen = db.Query<Advies> ("SELECT * FROM ADVIES WHERE AdviesOmschrijving = '" + omschrijving + "' ORDER BY IDADVIES DESC LIMIT 1");
+					if (adviezen.Count > 0)
+						return true;
+				}
+			}
+			return false;
+		}
+
 
 
 		public BeheerAdvies ()

@@ -133,7 +133,7 @@ namespace CC
 			databaseCreated = CheckIfCreated ();
 			if (databaseCreated) {
 				using (var db = new SQLiteConnection (GetDatabasePath ())) {
-					List<Kledingstuk> kleding = db.Query<Kledingstuk> ("SELECT * FROM KLEDINGSTUK WHERE GEBRUIKERSNAAM = '" + omschrijving + "' ORDER BY IDkledingstuk DESC LIMIT 1");
+					List<Kledingstuk> kleding = db.Query<Kledingstuk> ("SELECT * FROM KLEDINGSTUK WHERE Omschrijving = '" + omschrijving + "' ORDER BY IDkledingstuk DESC LIMIT 1");
 					if (kleding.Count > 0) {
 						return true;
 					}
