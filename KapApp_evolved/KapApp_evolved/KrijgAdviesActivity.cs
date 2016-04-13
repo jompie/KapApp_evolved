@@ -22,6 +22,7 @@ namespace KapApp_evolved
 		BeheerAdvies ba = new BeheerAdvies ();
 		BeheerIngelogd bi = new BeheerIngelogd ();
 		BeheerBasisinstellingen bb = new BeheerBasisinstellingen ();
+		BeheerKledingstukken bk = new BeheerKledingstukken ();
 
 		Button btnQR;
 		ImageView imgQR;
@@ -77,7 +78,18 @@ namespace KapApp_evolved
 			btnInfoSchoenen = FindViewById<Button> (Resource.Id.btn_infoSchoenen);
 			btnInfoAccessoires = FindViewById<Button> (Resource.Id.btn_infoAccessoires);
 
-
+			btnInfoBovenlichaam.Click+= delegate {
+				SetInfoscherm(txtBovenlichaam.Text);
+			};
+			btnInfoBenen.Click+= delegate {
+				SetInfoscherm(txtBenen.Text);
+			};
+			btnInfoSchoenen.Click+= delegate {
+				SetInfoscherm(txtSchoenen.Text);
+			};
+			btnInfoAccessoires.Click+= delegate {
+				SetInfoscherm(txtAccessoires.Text);
+			};
 
 
 
@@ -102,6 +114,21 @@ namespace KapApp_evolved
 				}
 			};
 			return writer.Write (tekst);
+		}
+
+		private void SetInfoscherm(string productomschrijving)
+		{
+			SetContentView(Resource.Layout.ProductInformatieScherm);
+			TextView txtOmschrijving = FindViewById<TextView>(Resource.Id.txt_infoOmschrijving);
+			TextView txtPrijs = FindViewById<TextView>(Resource.Id.txt_infoPrijs);
+			TextView txtType = FindViewById<TextView>(Resource.Id.txt_infoType);
+			Button terug = FindViewById<Button> (Resource.Id.btn_infoTerug);
+			txtOmschrijving.Text = productomschrijving;
+			txtPrijs.Text = "€"+bk.GetProductPrijs(txtOmschrijving.Text)+",00";
+			txtType.Text = bk.GetProductType(txtOmschrijving.Text);
+			terug.Click += delegate {
+				StartActivity(typeof(KrijgAdviesActivity));
+			};
 		}
 	}
 }

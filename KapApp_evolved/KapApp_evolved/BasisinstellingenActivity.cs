@@ -108,11 +108,10 @@ namespace KapApp_evolved
 
 			btnBevestig = FindViewById<Button> (Resource.Id.btn_basisBevestigen);
 			btnBevestig.Click += delegate {
-				Toast.MakeText(this, geslacht+oogkleur+haarkleur+ondertoon+kleurtype+lichaamstype+gebruikersnaamKlant, ToastLength.Short).Show();
 				//Zet waarden van spinners in een databes
-
 				bb.InsertBasisinstelling(geslacht, oogkleur, haarkleur, ondertoon, kleurtype, lichaamstype, gebruikersnaamKlant);
-
+				SetContentView(Resource.Layout.KlantScherm);
+				Toast.MakeText(this, "Basisinstellingen opgeslagen", ToastLength.Short).Show();
 			};
 
 		}

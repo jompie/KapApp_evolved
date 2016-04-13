@@ -88,6 +88,7 @@
     <AndroidResource Include="Resources\layout\VerkoperToevoegen.axml" />
     <AndroidResource Include="Resources\layout\AdviesMakenScherm.axml" />
     <AndroidResource Include="Resources\layout\QRCode.axml" />
+    <AndroidResource Include="Resources\layout\ProductInformatieScherm.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

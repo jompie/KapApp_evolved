@@ -96,6 +96,38 @@ namespace CC
 			}
 			return null;
 		}
+
+		public string GetProductPrijs(string omschrijving)
+		{
+			databaseCreated = CheckIfCreated ();
+			if (databaseCreated) {
+				using (var db = new SQLiteConnection (GetDatabasePath ())) {
+					List<Kledingstuk> kledingstuk = db.Query<Kledingstuk> ("SELECT * FROM KLEDINGSTUK WHERE OMSCHRIJVING ='" + omschrijving + "' ORDER BY IDKLEDINGSTUK DESC");
+					if (kledingstuk.Count > 0) {
+						Kledingstuk p = kledingstuk [0];
+						string prijs = p.Prijs.ToString();
+						return prijs;
+					}
+				}
+			}
+			return null;
+		}
+
+		public string GetProductType(string omschrijving)
+		{
+			databaseCreated = CheckIfCreated ();
+			if (databaseCreated) {
+				using (var db = new SQLiteConnection (GetDatabasePath ())) {
+					List<Kledingstuk> kledingstuk = db.Query<Kledingstuk> ("SELECT * FROM KLEDINGSTUK WHERE OMSCHRIJVING ='" + omschrijving + "' ORDER BY IDKLEDINGSTUK DESC");
+					if (kledingstuk.Count > 0) {
+						Kledingstuk p = kledingstuk [0];
+						string type = p.Kledingtype;
+						return type;
+					}
+				}
+			}
+			return null;
+		}
 	}
 }
 
