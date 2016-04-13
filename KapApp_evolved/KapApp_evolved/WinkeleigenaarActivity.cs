@@ -17,6 +17,7 @@ namespace KapApp_evolved
 	public class WinkeleigenaarActivity : Activity
 	{
 		Button btnVerkoperToevoegen;
+		Button btnKledingtoevoegen;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -27,6 +28,11 @@ namespace KapApp_evolved
 			btnVerkoperToevoegen = FindViewById<Button> (Resource.Id.btn_eigenaarToevoegenVerkoper);
 			btnVerkoperToevoegen.Click += delegate {
 				StartActivity(typeof(VerkoperToevoegen));
+			};
+
+			btnKledingtoevoegen = FindViewById<Button> (Resource.Id.btn_eigenaarCatUploaden);
+			btnKledingtoevoegen.Click += delegate {
+				StartActivity(typeof(CatalogusToevoegenActivity));
 			};
 		}
 	}

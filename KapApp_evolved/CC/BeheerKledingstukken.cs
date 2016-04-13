@@ -56,7 +56,7 @@ namespace CC
 				//Sexe = sexe}
 			using (var db = new SQLiteConnection (GetDatabasePath ())) 
 				{
-					db.Insert (kledingstuk);
+				db.Insert (kledingstuk);
 				}
 			}
 
@@ -127,6 +127,19 @@ namespace CC
 				}
 			}
 			return null;
+		}
+		public bool KledingstukBestaat(string omschrijving)
+		{
+			databaseCreated = CheckIfCreated ();
+			if (databaseCreated) {
+				using (var db = new SQLiteConnection (GetDatabasePath ())) {
+					List<Kledingstuk> kleding = db.Query<Kledingstuk> ("SELECT * FROM KLEDINGSTUK WHERE GEBRUIKERSNAAM = '" + omschrijving + "' ORDER BY IDkledingstuk DESC LIMIT 1");
+					if (kleding.Count > 0) {
+						return true;
+					}
+				}
+			}
+			return false;
 		}
 	}
 }

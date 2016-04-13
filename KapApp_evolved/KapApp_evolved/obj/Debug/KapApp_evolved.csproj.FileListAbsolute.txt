@@ -85,7 +85,6 @@ C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\Xamarin.Android.Support.v4.dll
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\CC.pdb
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\BU.pdb
-C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.csprojResolveAssemblyReference.cache
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.dll
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.pdb
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\android\bin\com.spicey_wraps.kapapp_evolved.apk
@@ -108,8 +107,10 @@ C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\res\layout\adviesmakenscherm.xml
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\res\layout\qrcode.xml
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\res\layout\productinformatiescherm.xml
+C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\res\layout\catalogustoevoegen.xml
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\R.cs.flag
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\uploadflags.txt
+C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.csprojResolveAssemblyReference.cache
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\CC.dll.mdb
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\obj\Debug\KapApp_evolved.dll.mdb
 C:\Users\jeanp\Documents\KapApp_evolved\KapApp_evolved\KapApp_evolved\bin\Debug\KapApp_evolved.dll.mdb

@@ -60,107 +60,128 @@ namespace KapApp_evolved
 			// aapt resource value: 0x7f050013
 			public const int btn_basisTerug = 2131034131;
 			
-			// aapt resource value: 0x7f05004e
-			public const int btn_eigenaarCatAanpassen = 2131034190;
+			// aapt resource value: 0x7f050059
+			public const int btn_eigenaarCatAanpassen = 2131034201;
 			
-			// aapt resource value: 0x7f05004d
-			public const int btn_eigenaarCatUploaden = 2131034189;
+			// aapt resource value: 0x7f050058
+			public const int btn_eigenaarCatUploaden = 2131034200;
 			
-			// aapt resource value: 0x7f05004f
-			public const int btn_eigenaarToevoegenVerkoper = 2131034191;
-			
-			// aapt resource value: 0x7f05002a
-			public const int btn_genereerQR = 2131034154;
-			
-			// aapt resource value: 0x7f050018
-			public const int btn_historieTerug = 2131034136;
-			
-			// aapt resource value: 0x7f050029
-			public const int btn_infoAccessoires = 2131034153;
-			
-			// aapt resource value: 0x7f050025
-			public const int btn_infoBenen = 2131034149;
-			
-			// aapt resource value: 0x7f050023
-			public const int btn_infoBoven = 2131034147;
-			
-			// aapt resource value: 0x7f050027
-			public const int btn_infoSchoenen = 2131034151;
-			
-			// aapt resource value: 0x7f050035
-			public const int btn_infoTerug = 2131034165;
-			
-			// aapt resource value: 0x7f05001b
-			public const int btn_klantBasisinstellingen = 2131034139;
-			
-			// aapt resource value: 0x7f05001d
-			public const int btn_klantHistorie = 2131034141;
-			
-			// aapt resource value: 0x7f05001c
-			public const int btn_klantKrijgAdvies = 2131034140;
-			
-			// aapt resource value: 0x7f050019
-			public const int btn_klantLogUit = 2131034137;
-			
-			// aapt resource value: 0x7f05001e
-			public const int btn_krijgAdviesTerug = 2131034142;
-			
-			// aapt resource value: 0x7f050030
-			public const int btn_loginAlgemeneInfo = 2131034160;
-			
-			// aapt resource value: 0x7f05002e
-			public const int btn_loginLogin = 2131034158;
-			
-			// aapt resource value: 0x7f05002f
-			public const int btn_loginRegistreer = 2131034159;
-			
-			// aapt resource value: 0x7f05003e
-			public const int btn_regRegistreer = 2131034174;
-			
-			// aapt resource value: 0x7f05004b
-			public const int btn_regRegistreerVerkoper = 2131034187;
-			
-			// aapt resource value: 0x7f050037
-			public const int btn_regTerug = 2131034167;
-			
-			// aapt resource value: 0x7f050041
-			public const int btn_stylistBrowse = 2131034177;
-			
-			// aapt resource value: 0x7f05003f
-			public const int btn_stylistLogUit = 2131034175;
-			
-			// aapt resource value: 0x7f050040
-			public const int btn_stylistStelAdviesSamen = 2131034176;
-			
-			// aapt resource value: 0x7f050042
-			public const int btn_verkoperScanQR = 2131034178;
-			
-			// aapt resource value: 0x7f05004c
-			public const int btn_winkelToevoegen = 2131034188;
-			
-			// aapt resource value: 0x7f05002b
-			public const int button1 = 2131034155;
-			
-			// aapt resource value: 0x7f050050
-			public const int contentFrame = 2131034192;
-			
-			// aapt resource value: 0x7f050034
-			public const int imageView1 = 2131034164;
+			// aapt resource value: 0x7f05005a
+			public const int btn_eigenaarToevoegenVerkoper = 2131034202;
 			
 			// aapt resource value: 0x7f050036
-			public const int img_kortingCodeQR = 2131034166;
+			public const int btn_genereerQR = 2131034166;
+			
+			// aapt resource value: 0x7f050025
+			public const int btn_historieTerug = 2131034149;
+			
+			// aapt resource value: 0x7f050035
+			public const int btn_infoAccessoires = 2131034165;
+			
+			// aapt resource value: 0x7f050031
+			public const int btn_infoBenen = 2131034161;
+			
+			// aapt resource value: 0x7f05002f
+			public const int btn_infoBoven = 2131034159;
+			
+			// aapt resource value: 0x7f050033
+			public const int btn_infoSchoenen = 2131034163;
+			
+			// aapt resource value: 0x7f050041
+			public const int btn_infoTerug = 2131034177;
+			
+			// aapt resource value: 0x7f050028
+			public const int btn_klantBasisinstellingen = 2131034152;
+			
+			// aapt resource value: 0x7f05002a
+			public const int btn_klantHistorie = 2131034154;
+			
+			// aapt resource value: 0x7f050029
+			public const int btn_klantKrijgAdvies = 2131034153;
+			
+			// aapt resource value: 0x7f050026
+			public const int btn_klantLogUit = 2131034150;
+			
+			// aapt resource value: 0x7f05002b
+			public const int btn_krijgAdviesTerug = 2131034155;
+			
+			// aapt resource value: 0x7f05003c
+			public const int btn_loginAlgemeneInfo = 2131034172;
+			
+			// aapt resource value: 0x7f05003a
+			public const int btn_loginLogin = 2131034170;
+			
+			// aapt resource value: 0x7f05003b
+			public const int btn_loginRegistreer = 2131034171;
+			
+			// aapt resource value: 0x7f050020
+			public const int btn_plaatjeToevoegen = 2131034144;
+			
+			// aapt resource value: 0x7f050049
+			public const int btn_regRegistreer = 2131034185;
+			
+			// aapt resource value: 0x7f050056
+			public const int btn_regRegistreerVerkoper = 2131034198;
+			
+			// aapt resource value: 0x7f050043
+			public const int btn_regTerug = 2131034179;
+			
+			// aapt resource value: 0x7f05004c
+			public const int btn_stylistBrowse = 2131034188;
+			
+			// aapt resource value: 0x7f05004a
+			public const int btn_stylistLogUit = 2131034186;
+			
+			// aapt resource value: 0x7f05004b
+			public const int btn_stylistStelAdviesSamen = 2131034187;
+			
+			// aapt resource value: 0x7f050022
+			public const int btn_terug = 2131034146;
+			
+			// aapt resource value: 0x7f050024
+			public const int btn_toevoegenKledingstuk = 2131034148;
+			
+			// aapt resource value: 0x7f05004d
+			public const int btn_verkoperScanQR = 2131034189;
+			
+			// aapt resource value: 0x7f050057
+			public const int btn_winkelToevoegen = 2131034199;
+			
+			// aapt resource value: 0x7f050037
+			public const int button1 = 2131034167;
+			
+			// aapt resource value: 0x7f05005b
+			public const int contentFrame = 2131034203;
+			
+			// aapt resource value: 0x7f050040
+			public const int imageView1 = 2131034176;
+			
+			// aapt resource value: 0x7f050042
+			public const int img_kortingCodeQR = 2131034178;
+			
+			// aapt resource value: 0x7f05001f
+			public const int img_plaatjeKledingstuk = 2131034143;
 			
 			// aapt resource value: 0x7f050004
 			public const int linearLayout1 = 2131034116;
 			
-			// aapt resource value: 0x7f050020
-			public const int linearLayout2 = 2131034144;
+			// aapt resource value: 0x7f050019
+			public const int linearLayout2 = 2131034137;
+			
+			// aapt resource value: 0x7f05001b
+			public const int linearLayout3 = 2131034139;
+			
+			// aapt resource value: 0x7f05001d
+			public const int linearLayout4 = 2131034141;
+			
+			// aapt resource value: 0x7f050021
+			public const int linearLayout5 = 2131034145;
 			
 			// aapt resource value: 0x7f05000c
 			public const int spinner_accessoires = 2131034124;
 			
-			// aapt resource value: 0x7f05003d
-			public const int spinner_accountType = 2131034173;
+			// aapt resource value: 0x7f050048
+			public const int spinner_accountType = 2131034184;
 			
 			// aapt resource value: 0x7f050008
 			public const int spinner_benen = 2131034120;
@@ -177,6 +198,9 @@ namespace KapApp_evolved
 			// aapt resource value: 0x7f050016
 			public const int spinner_huid = 2131034134;
 			
+			// aapt resource value: 0x7f05001a
+			public const int spinner_kledingstype = 2131034138;
+			
 			// aapt resource value: 0x7f050010
 			public const int spinner_kleurType = 2131034128;
 			
@@ -189,17 +213,17 @@ namespace KapApp_evolved
 			// aapt resource value: 0x7f05000a
 			public const int spinner_schoenen = 2131034122;
 			
-			// aapt resource value: 0x7f050045
-			public const int textV1 = 2131034181;
+			// aapt resource value: 0x7f050050
+			public const int textV1 = 2131034192;
 			
-			// aapt resource value: 0x7f050043
-			public const int textV2 = 2131034179;
+			// aapt resource value: 0x7f05004e
+			public const int textV2 = 2131034190;
 			
-			// aapt resource value: 0x7f050047
-			public const int textV3 = 2131034183;
+			// aapt resource value: 0x7f050052
+			public const int textV3 = 2131034194;
 			
-			// aapt resource value: 0x7f050049
-			public const int textV4 = 2131034185;
+			// aapt resource value: 0x7f050054
+			public const int textV4 = 2131034196;
 			
 			// aapt resource value: 0x7f05000e
 			public const int textView1 = 2131034126;
@@ -213,11 +237,11 @@ namespace KapApp_evolved
 			// aapt resource value: 0x7f050001
 			public const int textView4 = 2131034113;
 			
-			// aapt resource value: 0x7f05003c
-			public const int textView5 = 2131034172;
+			// aapt resource value: 0x7f050023
+			public const int textView5 = 2131034147;
 			
-			// aapt resource value: 0x7f050028
-			public const int txt_accessoiresOmschrijving = 2131034152;
+			// aapt resource value: 0x7f050034
+			public const int txt_accessoiresOmschrijving = 2131034164;
 			
 			// aapt resource value: 0x7f05000b
 			public const int txt_adviesMakenAccessoires = 2131034123;
@@ -234,62 +258,71 @@ namespace KapApp_evolved
 			// aapt resource value: 0x7f050002
 			public const int txt_adviesOmschrijving = 2131034114;
 			
-			// aapt resource value: 0x7f050024
-			public const int txt_benenOmschrijving = 2131034148;
+			// aapt resource value: 0x7f050030
+			public const int txt_benenOmschrijving = 2131034160;
 			
-			// aapt resource value: 0x7f050022
-			public const int txt_bovenlichaamOmschrijving = 2131034146;
+			// aapt resource value: 0x7f05002e
+			public const int txt_bovenlichaamOmschrijving = 2131034158;
 			
-			// aapt resource value: 0x7f050031
-			public const int txt_infoOmschrijving = 2131034161;
+			// aapt resource value: 0x7f05003d
+			public const int txt_infoOmschrijving = 2131034173;
 			
-			// aapt resource value: 0x7f050032
-			public const int txt_infoPrijs = 2131034162;
+			// aapt resource value: 0x7f05003e
+			public const int txt_infoPrijs = 2131034174;
 			
-			// aapt resource value: 0x7f050033
-			public const int txt_infoType = 2131034163;
+			// aapt resource value: 0x7f05003f
+			public const int txt_infoType = 2131034175;
 			
-			// aapt resource value: 0x7f05001a
-			public const int txt_klantWelkom = 2131034138;
+			// aapt resource value: 0x7f050027
+			public const int txt_klantWelkom = 2131034151;
 			
-			// aapt resource value: 0x7f05002c
-			public const int txt_loginGebruikersnaam = 2131034156;
-			
-			// aapt resource value: 0x7f05002d
-			public const int txt_loginWachtwoord = 2131034157;
-			
-			// aapt resource value: 0x7f05001f
-			public const int txt_omschrijvingAdvies = 2131034143;
-			
-			// aapt resource value: 0x7f050039
-			public const int txt_regGebruikersnaam = 2131034169;
-			
-			// aapt resource value: 0x7f050046
-			public const int txt_regGebruikersnaamVerkoper = 2131034182;
-			
-			// aapt resource value: 0x7f05003b
-			public const int txt_regHerhaalWachtwoord = 2131034171;
-			
-			// aapt resource value: 0x7f05004a
-			public const int txt_regHerhaalWachtwoordVerkoper = 2131034186;
+			// aapt resource value: 0x7f05001e
+			public const int txt_kortingKledingstuk = 2131034142;
 			
 			// aapt resource value: 0x7f050038
-			public const int txt_regNaam = 2131034168;
+			public const int txt_loginGebruikersnaam = 2131034168;
+			
+			// aapt resource value: 0x7f050039
+			public const int txt_loginWachtwoord = 2131034169;
+			
+			// aapt resource value: 0x7f05002c
+			public const int txt_omschrijvingAdvies = 2131034156;
+			
+			// aapt resource value: 0x7f050018
+			public const int txt_omschrijvingKledingstuk = 2131034136;
+			
+			// aapt resource value: 0x7f05001c
+			public const int txt_prijsKledingstuk = 2131034140;
+			
+			// aapt resource value: 0x7f050045
+			public const int txt_regGebruikersnaam = 2131034181;
+			
+			// aapt resource value: 0x7f050051
+			public const int txt_regGebruikersnaamVerkoper = 2131034193;
+			
+			// aapt resource value: 0x7f050047
+			public const int txt_regHerhaalWachtwoord = 2131034183;
+			
+			// aapt resource value: 0x7f050055
+			public const int txt_regHerhaalWachtwoordVerkoper = 2131034197;
 			
 			// aapt resource value: 0x7f050044
-			public const int txt_regNaamVerkoper = 2131034180;
+			public const int txt_regNaam = 2131034180;
 			
-			// aapt resource value: 0x7f05003a
-			public const int txt_regWachtwoord = 2131034170;
+			// aapt resource value: 0x7f05004f
+			public const int txt_regNaamVerkoper = 2131034191;
 			
-			// aapt resource value: 0x7f050048
-			public const int txt_regWachtwoordVerkoper = 2131034184;
+			// aapt resource value: 0x7f050046
+			public const int txt_regWachtwoord = 2131034182;
 			
-			// aapt resource value: 0x7f050026
-			public const int txt_schoenenOmschrijving = 2131034150;
+			// aapt resource value: 0x7f050053
+			public const int txt_regWachtwoordVerkoper = 2131034195;
 			
-			// aapt resource value: 0x7f050021
-			public const int txt_stylistOmschrijving = 2131034145;
+			// aapt resource value: 0x7f050032
+			public const int txt_schoenenOmschrijving = 2131034162;
+			
+			// aapt resource value: 0x7f05002d
+			public const int txt_stylistOmschrijving = 2131034157;
 			
 			static Id()
 			{
@@ -311,43 +344,46 @@ namespace KapApp_evolved
 			public const int BasisinstellingenScherm = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int HistorieScherm = 2130903042;
+			public const int CatalogusToevoegen = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int KlantScherm = 2130903043;
+			public const int HistorieScherm = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int KrijgAdviesScherm = 2130903044;
+			public const int KlantScherm = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int LoginScherm = 2130903045;
+			public const int KrijgAdviesScherm = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int ProductInformatieScherm = 2130903046;
+			public const int LoginScherm = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int QRCode = 2130903047;
+			public const int ProductInformatieScherm = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int RegistratieScherm = 2130903048;
+			public const int QRCode = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int StylistScherm = 2130903049;
+			public const int RegistratieScherm = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int VerkoperScherm = 2130903050;
+			public const int StylistScherm = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int VerkoperToevoegen = 2130903051;
+			public const int VerkoperScherm = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int WinkeleigenaarScherm = 2130903052;
+			public const int VerkoperToevoegen = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int zxingscanneractivitylayout = 2130903053;
+			public const int WinkeleigenaarScherm = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int zxingscannerfragmentlayout = 2130903054;
+			public const int zxingscanneractivitylayout = 2130903054;
+			
+			// aapt resource value: 0x7f03000f
+			public const int zxingscannerfragmentlayout = 2130903055;
 			
 			static Layout()
 			{

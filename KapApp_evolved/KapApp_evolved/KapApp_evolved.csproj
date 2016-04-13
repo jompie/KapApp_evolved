@@ -63,6 +63,7 @@
     <Compile Include="BekijkHistorie.cs" />
     <Compile Include="VerkoperToevoegen.cs" />
     <Compile Include="AdviesMaken.cs" />
+    <Compile Include="CatalogusToevoegen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -89,6 +90,7 @@
     <AndroidResource Include="Resources\layout\AdviesMakenScherm.axml" />
     <AndroidResource Include="Resources\layout\QRCode.axml" />
     <AndroidResource Include="Resources\layout\ProductInformatieScherm.axml" />
+    <AndroidResource Include="Resources\layout\CatalogusToevoegen.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
