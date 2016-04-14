@@ -76,6 +76,22 @@ namespace CC
 			return null;
 		}
 
+		public List<String> VindAdviesOpOmschrijving(string omschrijving)
+		{
+			databaseCreated = CheckIfCreated ();
+			if (databaseCreated) {
+				using (var db = new SQLiteConnection (GetDatabasePath ())) {
+					List<Advies> adviezen = db.Query<Advies> ("SELECT * FROM ADVIES WHERE AdviesOmschrijving = '" + omschrijving + "' ORDER BY IDADVIES DESC LIMIT 1");
+					if (adviezen.Count > 0) {
+						Advies p = adviezen [0];
+						List<string> advies = new List<string> (){ p.AdviesOmschrijving, p.Stylist, p.Bovenkleding, p.Beenmode, p.Schoeilsel, p.Accessoire };
+						return advies;
+					}
+				}
+			}
+			return null;
+		}
+
 		public bool PassendAdvies(string hoortbij)
 		{
 			databaseCreated = CheckIfCreated ();

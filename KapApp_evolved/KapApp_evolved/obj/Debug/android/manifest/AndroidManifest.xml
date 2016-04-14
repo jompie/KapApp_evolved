@@ -22,6 +22,7 @@
     <activity android:label="VerkoperToevoegen" android:name="md5c681aedf991b54413a1f97e97ac77390.VerkoperToevoegen" />
     <activity android:label="AdviesMaken" android:name="md5c681aedf991b54413a1f97e97ac77390.AdviesMaken" />
     <activity android:label="CatalogusToevoegenActivity" android:name="md5c681aedf991b54413a1f97e97ac77390.CatalogusToevoegenActivity" />
+    <activity android:label="CatalogusAanpassen" android:name="md5c681aedf991b54413a1f97e97ac77390.CatalogusAanpassen" />
     <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md5514d372efca5c125f0b05b5113ef3a89.ZxingActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.spicey_wraps.kapapp_evolved.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

@@ -64,6 +64,8 @@
     <Compile Include="VerkoperToevoegen.cs" />
     <Compile Include="AdviesMaken.cs" />
     <Compile Include="CatalogusToevoegen.cs" />
+    <Compile Include="BitmapHelpers.cs" />
+    <Compile Include="Resources\CatalogusAanpassen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -91,6 +93,7 @@
     <AndroidResource Include="Resources\layout\QRCode.axml" />
     <AndroidResource Include="Resources\layout\ProductInformatieScherm.axml" />
     <AndroidResource Include="Resources\layout\CatalogusToevoegen.axml" />
+    <AndroidResource Include="Resources\layout\PlaatjeToevoegenKeuze.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

@@ -2,130 +2,160 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="100">
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
+    android:layout_height="match_parent">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:weightSum="100">
-        <TextView
-            android:text="Naam"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="25"
-            android:id="@+id/textView1" />
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_omschrijvingKledingstuk"
-            android:layout_weight="75"
-            android:hint="Omschrijving van het product" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:id="@+id/linearLayout2"
-        android:weightSum="100">
-        <TextView
-            android:text="Kledingstype"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/spinner_kledingstype" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout3"
-        android:weightSum="100">
-        <TextView
-            android:text="Prijs"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="25"
-            android:id="@+id/textView3" />
-        <EditText
-            android:inputType="number"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_prijsKledingstuk"
-            android:layout_weight="75"
-            android:hint="Prijs in €"
-            android:numeric="integer" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout4"
-        android:weightSum="100">
-        <TextView
-            android:text="Korting"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="25"
-            android:id="@+id/textView4" />
-        <EditText
-            android:inputType="number"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_kortingKledingstuk"
-            android:layout_weight="75"
-            android:hint="Korting in €"
-            android:numeric="integer" />
-    </LinearLayout>
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/img_plaatjeKledingstuk"
-        android:layout_weight="90" />
-    <Button
-        android:text="Plaatje toevoegen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_plaatjeToevoegen" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout5"
-        android:weightSum="100">
-        <Button
-            android:text="Terug"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/btn_terug" />
-        <TextView
-            android:text=""
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/textView5"
-            android:layout_weight="100" />
-        <Button
-            android:text="+"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/btn_toevoegenKledingstuk" />
-    </LinearLayout>
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1"
+                android:weightSum="100">
+                <TextView
+                    android:text="Naam"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:id="@+id/textView1" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextOmschrijving"
+                    android:layout_weight="75" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/linearLayout2"
+                android:weightSum="100">
+                <TextView
+                    android:text="Kledingstype"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:layout_weight="30" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner_kledingstype"
+                    android:layout_weight="70" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/linearLayout6"
+                android:weightSum="100">
+                <TextView
+                    android:text="Geslacht"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView7"
+                    android:layout_weight="30" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner_geslacht"
+                    android:layout_weight="70" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3"
+                android:weightSum="100">
+                <TextView
+                    android:text="Prijs"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:id="@+id/textView3" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextPrijs"
+                    android:layout_weight="75" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:weightSum="100">
+                <TextView
+                    android:text="Korting"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:id="@+id/textView4" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextKorting"
+                    android:layout_weight="75" />
+            </LinearLayout>
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgVwPlaatje"
+                android:layout_weight="90"
+                android:minHeight="200dp" />
+            <Button
+                android:text="Plaatje toevoegen vanuit Gallerij"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_plaatjeToevoegen" />
+            <Button
+                android:text="Plaatje toevoegen met Camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_cameraToevoegen" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5"
+                android:weightSum="100">
+                <Button
+                    android:text="Terug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_terug_WE" />
+                <TextView
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView5"
+                    android:layout_weight="100" />
+                <Button
+                    android:text="+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_productOpslaan" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -25,6 +25,7 @@ namespace KapApp_evolved
 		EditText txtWachtwoord;
 		EditText txtHerhaalWachtwoord;
 		Button btnBevestigen;
+		Button terug;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -62,12 +63,17 @@ namespace KapApp_evolved
 					if(!volledigIngevuld)
 						Toast.MakeText (this.BaseContext, "Formulier is niet volledig ingevuld", ToastLength.Short).Show ();
 			};
+
+			terug = FindViewById<Button> (Resource.Id.btn_verkoperToevoegenTerug);
+			terug.Click += delegate {
+				StartActivity(typeof(WinkeleigenaarActivity));
+			};
 		}
 		private bool checkVolledigIngevuld()
 		{
-			if (txtNaam.Text == null | 
-				txtGebruikersnaam.Text == null | 
-				txtWachtwoord.Text == null)
+			if (txtNaam.Text == "" | 
+				txtGebruikersnaam.Text == "" | 
+				txtWachtwoord.Text == "")
 				return false;
 			else
 				return true;

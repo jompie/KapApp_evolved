@@ -18,6 +18,7 @@ namespace KapApp_evolved
 	{
 		Button btnVerkoperToevoegen;
 		Button btnKledingtoevoegen;
+		Button btnLogUit;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -25,8 +26,14 @@ namespace KapApp_evolved
 
 			SetContentView (Resource.Layout.WinkeleigenaarScherm);
 
+			btnLogUit = FindViewById<Button> (Resource.Id.btn_eigenaarLogUit);
+			btnLogUit.Click += delegate {
+				StartActivity(typeof(MainActivity));
+			};
+
 			btnVerkoperToevoegen = FindViewById<Button> (Resource.Id.btn_eigenaarToevoegenVerkoper);
 			btnVerkoperToevoegen.Click += delegate {
+				
 				StartActivity(typeof(VerkoperToevoegen));
 			};
 
