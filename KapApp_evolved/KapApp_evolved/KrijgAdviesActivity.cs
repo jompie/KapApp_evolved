@@ -145,6 +145,8 @@ namespace KapApp_evolved
 			TextView txtOmschrijving = FindViewById<TextView>(Resource.Id.txt_infoOmschrijving);
 			TextView txtPrijs = FindViewById<TextView>(Resource.Id.txt_infoPrijs);
 			TextView txtType = FindViewById<TextView>(Resource.Id.txt_infoType);
+			ImageView product = FindViewById<ImageView> (Resource.Id.img_Product);
+			krijgPlaatje ();
 			Button terug = FindViewById<Button> (Resource.Id.btn_infoTerug);
 			txtOmschrijving.Text = productomschrijving;
 			txtPrijs.Text = "€"+bk.GetProductPrijs(txtOmschrijving.Text)+",00";
@@ -153,6 +155,20 @@ namespace KapApp_evolved
 				StartActivity(typeof(KrijgAdviesActivity));
 			};
 		}
+
+		void krijgPlaatje()
+		{
+			//var sdPath = .Path;
+			var imgFilePath = System.IO.Path.Combine ("/storage/emulated/0/Pictures/CameraAppDemo/myPhoto_1.jpg");
+
+			if (System.IO.File.Exists (imgFilePath)) {
+				var imageFile = new Java.IO.File (imgFilePath);
+				Bitmap bitmap = BitmapFactory.DecodeFile (imageFile.AbsolutePath);
+				ImageView product = FindViewById<ImageView> (Resource.Id.img_Product);
+				product.SetImageBitmap (bitmap);
+			}
+		}
+
 
 	}
 }

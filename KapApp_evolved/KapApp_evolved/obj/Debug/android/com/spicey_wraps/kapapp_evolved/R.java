@@ -56,8 +56,8 @@ public final class R {
         public static final int editTextKorting=0x7f050020;
         public static final int editTextOmschrijving=0x7f050018;
         public static final int editTextPrijs=0x7f05001e;
-        public static final int imageView1=0x7f050048;
         public static final int imgVwPlaatje=0x7f050021;
+        public static final int img_Product=0x7f050048;
         public static final int img_kortingCodeQR=0x7f05004a;
         public static final int linearLayout1=0x7f050004;
         public static final int linearLayout2=0x7f050019;

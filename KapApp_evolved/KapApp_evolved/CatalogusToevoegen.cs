@@ -208,7 +208,8 @@ namespace KapApp_evolved
 		private void TakeAPicture (object sender, EventArgs eventArgs)
 		{
 			Intent intent = new Intent (MediaStore.ActionImageCapture);
-			App._file = new Java.IO.File (App._dir, String.Format("myPhoto_{0}.jpg", Guid.NewGuid()));
+			App._file = new Java.IO.File (App._dir, ("myPhoto_1.jpg"));
+				
 			intent.PutExtra (MediaStore.ExtraOutput, Android.Net.Uri.FromFile (App._file));
 			StartActivityForResult (intent, 1);
 		}

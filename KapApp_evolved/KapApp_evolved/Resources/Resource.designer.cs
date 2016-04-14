@@ -183,11 +183,11 @@ namespace KapApp_evolved
 			// aapt resource value: 0x7f05001e
 			public const int editTextPrijs = 2131034142;
 			
-			// aapt resource value: 0x7f050048
-			public const int imageView1 = 2131034184;
-			
 			// aapt resource value: 0x7f050021
 			public const int imgVwPlaatje = 2131034145;
+			
+			// aapt resource value: 0x7f050048
+			public const int img_Product = 2131034184;
 			
 			// aapt resource value: 0x7f05004a
 			public const int img_kortingCodeQR = 2131034186;
