@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="KapApp_evolved\KapApp_evolved.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.45.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CC\BeheerAdvies.cs">
     <Files>
-      <File FileName="CC\BeheerAdvies.cs" Line="88" Column="21" />
-      <File FileName="KapApp_evolved\BasisinstellingenActivity.cs" Line="143" Column="21" />
+      <File FileName="CC\BeheerAdvies.cs" Line="58" Column="4" />
+      <File FileName="KapApp_evolved\BasisinstellingenActivity.cs" Line="1" Column="1" />
       <File FileName="KapApp_evolved\KlantActivity.cs" Line="1" Column="1" />
-      <File FileName="KapApp_evolved\AdviesMaken.cs" Line="129" Column="90" />
+      <File FileName="KapApp_evolved\AdviesMaken.cs" Line="1" Column="1" />
+      <File FileName="KapApp_evolved\BekijkHistorie.cs" Line="1" Column="1" />
+      <File FileName="BU\SQLite.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
