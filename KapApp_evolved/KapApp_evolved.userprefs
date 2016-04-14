@@ -1,17 +1,11 @@
 ﻿<Properties StartupItem="KapApp_evolved\KapApp_evolved.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.45.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CC\BeheerBasisinstellingen.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="KapApp_evolved\MainActivity.cs" Line="44" Column="36" />
-      <File FileName="CC\BeheerKledingstukken.cs" Line="66" Column="27" />
-      <File FileName="KapApp_evolved\BasisinstellingenActivity.cs" Line="106" Column="4" />
-      <File FileName="BU\Advies.cs" Line="15" Column="47" />
-      <File FileName="CC\BeheerAdvies.cs" Line="72" Column="21" />
-      <File FileName="KapApp_evolved\KrijgAdviesActivity.cs" Line="61" Column="36" />
-      <File FileName="CC\BeheerBasisinstellingen.cs" Line="69" Column="28" />
-      <File FileName="BU\Gebruiker Class\Klant.cs" Line="12" Column="18" />
-      <File FileName="BU\Gebruiker Class\Gebruiker.cs" Line="15" Column="22" />
-      <File FileName="KapApp_evolved\KlantActivity.cs" Line="39" Column="68" />
+      <File FileName="CC\BeheerAdvies.cs" Line="88" Column="21" />
+      <File FileName="KapApp_evolved\BasisinstellingenActivity.cs" Line="143" Column="21" />
+      <File FileName="KapApp_evolved\KlantActivity.cs" Line="1" Column="1" />
+      <File FileName="KapApp_evolved\AdviesMaken.cs" Line="129" Column="90" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

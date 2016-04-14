@@ -35,10 +35,10 @@ namespace KapApp_evolved
 
 			// Browse catalogus
 			// Als deze button wordt ingedrukt, wordt een scherm geladen waar de stylist catalogussen kan browsen.
-			btn_browseCatalogus = FindViewById<Button>(Resource.Id.btn_stylistBrowse);
-			btn_browseCatalogus.Click += delegate {
+			//btn_browseCatalogus = FindViewById<Button>(Resource.Id.btn_stylistBrowse);
+			//btn_browseCatalogus.Click += delegate {
 				//StartActivity(typeoff());
-			};
+			//};
 			btnLogUit = FindViewById<Button> (Resource.Id.btn_stylistLogUit);
 			btnLogUit.Click += delegate {
 				StartActivity(typeof(MainActivity));

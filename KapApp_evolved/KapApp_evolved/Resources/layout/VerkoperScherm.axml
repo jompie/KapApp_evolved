@@ -5,6 +5,23 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:paddingBottom="10dp">
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="60" />
+        <Button
+            android:text="Log Uit"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:id="@+id/btn_verkoperLogUit" />
+    </LinearLayout>
     <Button
         android:text="Scan Kortingscode"
         android:layout_width="match_parent"

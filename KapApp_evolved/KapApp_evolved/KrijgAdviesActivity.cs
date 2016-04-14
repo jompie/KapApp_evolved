@@ -112,7 +112,11 @@ namespace KapApp_evolved
 			btnQR.Click += delegate {
 				SetContentView (Resource.Layout.QRCode);
 				imgQR = FindViewById<ImageView>(Resource.Id.img_kortingCodeQR);
-				imgQR.SetImageBitmap(GetQRCode(kortingscode));			
+				Button terug = FindViewById<Button>(Resource.Id.btn_QRTerug);
+				imgQR.SetImageBitmap(GetQRCode(kortingscode));
+				terug.Click+= delegate {
+					StartActivity(typeof(KrijgAdviesActivity));
+				};
 			};
 
 			btnTerug = FindViewById<Button> (Resource.Id.btn_krijgAdviesTerug);

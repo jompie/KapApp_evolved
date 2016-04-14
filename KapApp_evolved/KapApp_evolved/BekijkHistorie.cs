@@ -37,16 +37,15 @@ namespace KapApp_evolved
 
 			ingelogdAls = bi.GetIngelogd ();
 			favorieten = bf.GetFavorieten (ingelogdAls);
-			string f = favorieten.Count.ToString();Toast.MakeText (this, f+ingelogdAls, ToastLength.Short).Show ();
 			lstFavorieten = FindViewById<ListView> (Resource.Id.list_favorieten);
 
 			ArrayAdapter adapter = new ArrayAdapter<String> (this,Android.Resource.Layout.SimpleListItem1, favorieten);
 			lstFavorieten.Adapter = adapter;
 			lstFavorieten.ItemClick += MListView_ItemClick;
 
-			btnTerug = FindViewById<Button> (Resource.Id.btn_historieTerug);
+			btnTerug = FindViewById<Button> (Resource.Id.btn_favorietenTerug);
 			btnTerug.Click += delegate {
-				StartActivity(typeof(MainActivity));
+				StartActivity(typeof(KlantActivity));
 			};
 		}
 		void MListView_ItemClick (object sender, AdapterView.ItemClickEventArgs e)

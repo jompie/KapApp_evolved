@@ -42,7 +42,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_geslacht"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -64,7 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_oog"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -86,7 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_haar"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -108,7 +111,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_huid"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -130,7 +134,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_lichaam"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <Button
         android:text="Bevestigen"

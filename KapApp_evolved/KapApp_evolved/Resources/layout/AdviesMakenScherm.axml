@@ -58,7 +58,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_bovenlichaam"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -80,7 +81,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_benen"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -102,7 +104,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_schoenen"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -124,7 +127,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_accessoires"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <TextView
         android:text="Voor wie is dit advies bedoeld?"
@@ -152,7 +156,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_geslacht"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -174,7 +179,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_kleurType"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -196,7 +202,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner_lichaam"
-            android:layout_weight="25" />
+            android:layout_weight="25"
+            android:spinnerMode="dialog" />
     </LinearLayout>
     <Button
         android:text="Bevestigen"

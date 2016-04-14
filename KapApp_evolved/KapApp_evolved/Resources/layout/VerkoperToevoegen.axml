@@ -53,7 +53,8 @@
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_regWachtwoordVerkoper" />
+        android:id="@+id/txt_regWachtwoordVerkoper"
+        android:password="true" />
     <TextView
         android:text="Herhaal wachtwoord"
         android:layout_width="match_parent"
@@ -63,7 +64,8 @@
         android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_regHerhaalWachtwoordVerkoper" />
+        android:id="@+id/txt_regHerhaalWachtwoordVerkoper"
+        android:password="true" />
     <Button
         android:text="Registreer"
         android:layout_width="match_parent"

@@ -20,6 +20,7 @@ namespace KapApp_evolved
 	public class VerkoperActivity : Activity
 	{
 		Button btnScanKorting;
+		Button logUit;
 		private string kortingscode;
 
 		protected override void OnCreate (Bundle savedInstanceState)
@@ -37,6 +38,10 @@ namespace KapApp_evolved
 					kortingscode = result.ToString();
 					Toast.MakeText(this, kortingscode, ToastLength.Short).Show();
 				}
+			};
+			logUit = FindViewById<Button> (Resource.Id.btn_verkoperLogUit);
+			logUit.Click += delegate {
+				StartActivity(typeof(MainActivity));
 			};
 
 		}

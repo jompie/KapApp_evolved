@@ -136,10 +136,8 @@ namespace KapApp_evolved
 
 		private string bepaalKleurtype(string oog, string haar, string ondertoon)
 		{
-			Toast.MakeText(this, "ondertoon:"+ondertoon, ToastLength.Short).Show();
 			if ( ondertoon == "Koel")
 			{
-				Toast.MakeText(this, "koele shit", ToastLength.Short).Show();
 				
 				if (oog == "Blauw" | oog == "Groen")
 					return "Zomer";
@@ -150,7 +148,6 @@ namespace KapApp_evolved
 			else
 				if ( ondertoon == "Warm") 
 			{
-				Toast.MakeText(this, "warme shit", ToastLength.Short).Show();
 				if (haar == "Rood" | oog == "Blauw" | oog =="Groen")
 					return "Lente";
 				else 
